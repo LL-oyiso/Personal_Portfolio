@@ -1,0 +1,19 @@
+body{
+    background-image: url("black-gradient.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top:0px;
+}
+
+.card{
+    display:flex;
+    justify-content: end;
+    align-items: center;
+}
+.anny{
+    height: 1000px;
+    display:flex;
+    justify-content: end;
+    align-items: center;
+}
