@@ -3,17 +3,52 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    margin-top:0px;
+    text-align: center;
 }
-
-.card{
+#container{
+    margin: 60px 60px;
+}
+.nav-content{
     display:flex;
     justify-content: end;
     align-items: center;
+
+}
+
+#hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:220px;
+    font-size: 28px;
+    color:white;
+   
+}
+.inside{
+    width:800px;
+}
+.underline{
+    border-bottom: 7px solid #ABABAB;
+}
+.font-color{
+    color:#ABABAB;
 }
 .anny{
     height: 1000px;
-    display:flex;
-    justify-content: end;
-    align-items: center;
+}
+
+#logo{
+    margin-right: 620px;
+}
+#house{
+   margin-right: 160px; 
+}
+
+#smile{
+    margin-right: 160px; 
+ }
+
+#contact{
+    margin-right: 80px;
 }
