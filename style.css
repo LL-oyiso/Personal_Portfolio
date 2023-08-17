@@ -6,38 +6,6 @@ body{
     text-align: center;
     font-family:  'Krona One', sans-serif;;
 }
-#container{
-    margin: 60px 60px;
-}
-.nav-content{
-    display:flex;
-    justify-content: end;
-    align-items: center;
-
-}
-
-#hero-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top:220px;
-    font-size: 20px;
-    color:white;
-   
-}
-.inside{
-    width:920px;
-}
-.underline{
-    border-bottom: 7px solid #ABABAB;
-}
-.font-color{
-    color:#ABABAB;
-}
-.anny{
-    height: 1000px;
-}
 
 #logo{
     margin-right: 620px;
@@ -49,6 +17,41 @@ body{
 #smile{
     margin-right: 160px; 
  }
+#container{
+    margin: 60px 60px;
+}
+.nav-content{
+    display:flex;
+    justify-content: end;
+    align-items: center;
+
+}
+#hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:220px;
+    font-size: 20px;
+    color:white;
+   
+}
+.hero-content{
+    width:920px;
+}
+.underline{
+    border-bottom: 7px solid #ABABAB;
+}
+.word-color{
+    color:#ABABAB;
+}
+#arrow-down{
+    margin-top: 80px;
+}
+.anny{
+    height: 1000px;
+}
+
 
 #contact{
     margin-right: 80px;
