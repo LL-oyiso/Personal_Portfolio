@@ -32,7 +32,7 @@ body{
     justify-content: center;
     align-items: center;
     margin-top:220px;
-    font-size: 20px;
+    font-size: 22px;
     color:white;
    
 }
@@ -95,7 +95,12 @@ th {
     background-color: white;
   }
 
-  .space{
- 
-    text-align: center;
+  .flexit{
+    display:flex;
+    justify-content: space-between;
+    
+  }
+
+  .about-me{
+    margin-top : 210px;
   }
