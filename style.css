@@ -8,7 +8,7 @@ body{
 }
 
 #logo{
-    margin-right: 620px;
+    margin-right: 930px;
 }
 #house{
    margin-right: 160px; 
@@ -48,6 +48,35 @@ body{
 #arrow-down{
     margin-top: 80px;
 }
+
+.about-sec{
+    width: 1500px;
+    margin-left:auto;
+    margin-right: auto;
+}
+.read-me{
+    margin-top:200px;    
+}
+table{
+    border-collapse: collapse;
+    border-radius: 15px;
+    width: 100%;
+    overflow: hidden;
+    padding: 300px;     
+}
+
+
+th, td {
+    border: 1px solid rgba(217, 217, 217, 0.15);
+    padding: 8px;
+    text-align: left;
+    height:50px;
+    
+}
+
+
+
+
 .anny{
     height: 1000px;
 }
@@ -56,3 +85,17 @@ body{
 #contact{
     margin-right: 80px;
 }
+th {
+    background:rgba(217, 217, 217, 0.15);
+    color: white;
+    text-align:right;
+  
+  }
+  .white{
+    background-color: white;
+  }
+
+  .space{
+ 
+    text-align: center;
+  }
