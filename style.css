@@ -4,11 +4,11 @@ body{
     background-size: cover;
     background-position: center center;
     text-align: center;
-    font-family:  'Krona One', sans-serif;;
+    font-family:  'Krona One', sans-serif;
 }
 
 #logo{
-    margin-right: 930px;
+   margin-right: 640px;
 }
 #house{
    margin-right: 160px; 
@@ -22,9 +22,8 @@ body{
 }
 .nav-content{
     display:flex;
-    justify-content: end;
+    justify-content:center;
     align-items: center;
-
 }
 #hero{
     display: flex;
@@ -50,28 +49,40 @@ body{
 }
 
 .about-sec{
-    width: 1500px;
-    margin-left:auto;
-    margin-right: auto;
+   width: px;
+   display:flex;
+   flex-direction: column;
+   margin-right:auto;
+   margin-left:auto;
 }
 .read-me{
+    margin:auto;
     margin-top:200px;    
+    width:1200px;
+    
 }
 table{
     border-collapse: collapse;
     border-radius: 15px;
     width: 100%;
     overflow: hidden;
-    padding: 300px;     
+    padding: 300px;   
+    
 }
 
 
 th, td {
     border: 1px solid rgba(217, 217, 217, 0.15);
-    padding: 8px;
-    text-align: left;
     height:50px;
+    text-align: left;
+   
     
+}
+.about{
+    height:70px;
+    text-align: left;
+    margin-left:50px;
+    font-size:25px;
 }
 
 
@@ -89,6 +100,7 @@ th {
     background:rgba(217, 217, 217, 0.15);
     color: white;
     text-align:right;
+    padding: 10px 20px;
   
   }
   .white{
@@ -96,11 +108,20 @@ th {
   }
 
   .flexit{
+   
     display:flex;
     justify-content: space-between;
     
   }
 
   .about-me{
-    margin-top : 210px;
+
+    width:1200px;
+    margin:210px auto 0px auto;
+
   }
+  h3{
+    color:#ABABAB;
+  }
+
+  
