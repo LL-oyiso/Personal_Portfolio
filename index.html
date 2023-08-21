@@ -20,15 +20,16 @@
                    <li><a href =""><img id = "contact" src ="contact.svg"></a></li>
                 </ul>
             </nav>
-            
+            <img src="menu.png" class = "menu-icon" onclick ="togglemenu()">
         </div>
             <div id="hero">
-                <h1>Hello, <span class ="underline">I'm Loyiso</span></h1>
-                <div class ="hero-content"><h3>A Cape Town based <span class ="word-color">software developer</span> with an interest in 
+                <div class ="hero-content">
+                    <h1>Hello, <span class ="underline">I'm Loyiso</span></h1>
+                    <h3>A Cape Town based <span class ="word-color">software developer</span> with an interest in 
                     data analytics and a passion for creating <span class ="word-color">memorable</span> and
                     engaging web <span class ="word-color">experiences</span></h3>
-                </div>
                     <img id ="arrow-down" src = "arrow.svg" alt ="Arrow indicating to scroll down to view content beneath">
+                </div>
                 </div>
                     <div class = "about-sec">
                         <div class = "read-me">
@@ -111,4 +112,19 @@
  
     
 </body>
+<script>
+    var menuList = document.getElementById("menuList");
+
+    menuList.style.maxHeight = "0px";
+
+    function togglemenu(){
+        if(menuList.style.maxHeight == "0px")
+        {
+            menuList.style.maxHeight = "130px";
+        }
+        else{
+            menuList.style.maxHeight = "0px";
+        }
+    }
+</script>
 </html>
