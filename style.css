@@ -5,6 +5,7 @@ body{
     background-position: center center;
     text-align: center;
     font-family:  'Krona One', sans-serif;
+    color:white;
 }
 
 #logo{
@@ -32,12 +33,14 @@ body{
     align-items: center;
     margin-top:220px;
     font-size: 22px;
-    color:white;
-   
+    
+    
 }
 .hero-content{
     width:920px;
-}
+    
+   
+} 
 .underline{
     border-bottom: 7px solid #ABABAB;
 }
@@ -120,13 +123,35 @@ th {
     margin:210px auto 0px auto;
 
   }
-  h3{
+
+
   
+
+  .Projects{
+    margin-top:550px;
   }
+  .Projects-top{
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+  /*Because when you apply flex it squeezes into center and you dont get grid layout but the margin top push bottom cards down*/
+  .Projects-bottom{
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+    
+
   .card{
     display:flex;
     flex-direction: column;
     align-items: center;
+
     margin-right:auto;
     margin-left:auto;
     background:white;
@@ -153,3 +178,24 @@ th {
     font-family: 'Krona One', sans-serif;
     padding:21px 10px;
   }
+
+  
+  .img-card{
+    margin-top:80px;
+    width:300px;
+    height:200px;
+    margin:20px 10px;
+    max-width: 100%;
+  }
+  .view-live{
+    margin-top:30px;
+    margin-bottom:40px;
+    border-radius:20px;
+    border:none;
+    background-color: rgba(171, 171, 171, 1);
+    font-family: 'Krona One', sans-serif;
+    padding:21px 10px;
+  }
+
+ 
+
