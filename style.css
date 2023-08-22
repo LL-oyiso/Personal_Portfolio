@@ -238,7 +238,7 @@ th {
         width:100%;
         background:linear-gradient(hsl(333, 18%, 10%),#e9e1e1);
         position:absolute;
-        top:75px;
+       top:75;
         right: 0;
         z-index: 2;
     }
