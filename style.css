@@ -273,4 +273,6 @@ th {
   display:flex;
   margin-right:auto;
   margin-left:auto;
+  align-items:center;
+  justify-content: center;
 }
