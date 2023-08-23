@@ -17,42 +17,44 @@ body{
 
 #logo{
    cursor:pointer;
-   margin:20px 30px;
-   /* border: 1px solid red; */
+   margin:40px 20px;
+   /* : 1px solid red;  */
 }
 #house{
-   margin-right: 160px; 
-   margin:20px 30px;
-   /* border: 1px solid red; */
+   
+    margin:20px 20px;
+    /* : 1px solid red; */
 }
 
 #smile{
-    margin-right: 160px; 
-    margin:20px 30px;
-    /* border: 1px solid red; */
+   
+    margin:20px 20px;
+    /* : 1px solid red;  */
  }
  #contact{
-  margin-right: 160px; 
-    margin:20px 30px;
-    /* border: 1px solid red; */
+  
+  margin:20px 20px;
+     /* : 1px solid red;  */
  }
 .container{
     /* margin: 60px 60px; */
     max-width: 100%;
     /*width:100%;*/
-    padding-right:8%;
-    padding-left:8%;
+    padding-right:6%;
+    padding-left:6%;
     box-sizing: border-box;
     overflow: hidden;
    
 }
 .navbar{
  
-  display:flex;
+  
     /*justify-content:center;*/
-   
+    display:flex;
+    justify-content:center;
+    
    /* border: 1px solid red; */
-   margin:20px;
+  
 }
 nav{
   flex:1;
@@ -60,11 +62,15 @@ nav{
   
 }
 .nav-flex{
-  
-  display:flex;
-  justify-content:end;
-   /* border: 1px solid red; */
-   text-align:left;
+   margin-top:20px;
+   display:flex;
+   padding-right:0px;
+   /* border: 1px solid red;  */
+   justify-content: end;
+   
+ 
+   
+
 }
 
 nav ul li{
@@ -81,6 +87,9 @@ nav ul li{
 
 nav ul li a:hover{
   color:#ABABAB;
+}
+li{
+  margin:0px;
 }
 #hero{
     display: flex;
