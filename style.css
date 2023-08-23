@@ -1,3 +1,10 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+   border: 2px solid red; 
+}
+
 body{
     background-image: url("black-gradient.jpg") ;
     background-repeat: no-repeat;
@@ -20,23 +27,26 @@ body{
     margin-right: 160px; 
  }
 .container{
-    margin: 60px 60px;
-    width:100%;
+    /* margin: 60px 60px; */
+    max-width: 100%;
+    /*width:100%;*/
     padding-right:8%;
     padding-left:8%;
     box-sizing: border-box;
     overflow: hidden;
-  
+   
 }
 .navbar{
   width:100%;
     display:flex;
     /*justify-content:center;*/
     align-items: center;
+   
 }
 nav{
   flex:1;
   text-align:right;
+  
 }
 
 nav ul li{
@@ -68,7 +78,8 @@ nav ul li a:hover{
     width:920px;
     flex-basis:40%;
     position: relative;
-   /* margin-left:50px;*/
+    margin-left:50px;
+    margin-top:40px;
    
 } 
 .underline{
@@ -95,7 +106,7 @@ nav ul li a:hover{
    margin-left:auto;
 }
 .read-me{
-    /*margin:auto;
+    /* margin:auto; 
     margin-top:200px;    
     width:1200px;*/
     
@@ -173,7 +184,7 @@ th {
     
     
   }
-  /*Because when you apply flex it squeezes into center and you dont get grid layout but the margin top push bottom cards down*/
+  /* mBecause when you apply flex it squeezes into center and you dont get grid layout but the margin top push bottom cards down
   .Projects-bottom{
 
     display:flex;
@@ -183,28 +194,28 @@ th {
     
 
   .card{
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    background: white;
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+    margin: 50px auto;
+    padding: 20px;
 
-    margin-right:auto;
-    margin-left:auto;
-    background:white;
-    width:380px;
-    height:450px;
-    border-radius:15px;
-    margin-top:50px;
   }
 
 
 
-  .img-card{
+ /* .img-card{
     margin-top:80px;
     width:350px;
     
-  }
+  }*/
 
-  .view-live{
+  /*.view-live{
     margin-top:30px;
     margin-bottom:150px;
     border-radius:20px;
@@ -230,7 +241,51 @@ th {
     background-color: rgba(171, 171, 171, 1);
     font-family: 'Krona One', sans-serif;
     padding:21px 10px;
-  }
+  } 
+  */   
+  .Projects-top {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next row */
+    justify-content: center; /* Center cards horizontally */
+}
+.Projects-bottom {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next row */
+  justify-content: center; /* Center cards horizontally */
+}
+
+.card {
+    flex: 1; /* Grow to fill available space */
+    margin: 10px; /* Add margin between cards */
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    box-sizing: border-box; /* Ensure padding doesn't affect the width */
+}
+
+.card img {
+    max-width: 100%;
+    height:200px;
+}
+
+.card-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.view-live {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
 
   @media only screen and (max-width:700px) {
     /*for device less than 700px*/
@@ -254,15 +309,105 @@ th {
     }
     .menu-icon{
         display:block;
+        margin-left: 50px;
     }
     
     #menuList{
      overflow:hidden;
      transition: 0.5s;   
     }
+    th, td {
+      flex-direction: row;
+      border: 1px solid rgba(217, 217, 217, 0.15);
+      height:50px;
+      text-align: center;
 
     #hero{
         flex-direction: column-reverse;
         margin: 50px 0;
     }
   }
+
+  /* phone responsiveness */
+
+@media only screen and (max-width:420px) {
+
+  #hero{
+    flex-direction: row;
+    text-align: center;
+    margin-top: 100px;
+  }  
+   
+   .underline {
+    flex: auto;
+    text-align: center;
+    margin-top: auto;
+}
+table{  
+  flex: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.card {
+  flex: 1; /* Grow to fill available space */
+  margin: 10px; /* Add margin between cards */
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 100%;
+  box-sizing: border-box; /* Ensure padding doesn't affect the width */
+  /* height: 200px; */
+  
+}
+
+.card img {
+  max-width: 100%;
+  height:100px;
+  margin-bottom: 30px;
+  object-fit: contain;
+}
+
+.card-text {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.view-live {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.about{
+  height:70px;
+  text-align: center;
+  margin-left:50px;
+  font-size:25px;
+}
+
+.flexit{
+   
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+} 
+th, td {
+  flex-direction: row;
+  border: 1px solid rgba(217, 217, 217, 0.15);
+  height:50px;
+  text-align: center;
+}
+
+}
