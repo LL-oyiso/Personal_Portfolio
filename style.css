@@ -340,12 +340,7 @@ th {
   margin-top:60px;
 }
 
-.text{
-  border-radius:10px;
-  margin-bottom:20px;
-  background-color:  rgba(217, 217, 217, 0.24);;
-  border:none;
-}
+
 input[type=submit] {
   background-color: rgba(217, 217, 217, 0.54);
   color: white;
@@ -357,15 +352,35 @@ input[type=submit] {
   margin-bottom:40px;
 }
 
-.name{
+.input-name{
   display: flex;
   justify-content: start;
 }
+.name{
+margin-left:20px;
+border:1px solid red;
+}
 
-.text{
+.input-field{
+ margin-left:290px;
+ border-radius:10px;
+ margin-bottom:20px;
+ background-color:  rgba(217, 217, 217, 0.24);
+ border:none;
+ border:1px solid red;
+}
+.input-textarea{
+ 
+  
+  background-color:  rgba(217, 217, 217, 0.24);
+  border:1px solid red;
+}
+.input-text{
+  border:1px solid red;
   display: flex;
-  justify-content:end;
-  align-items:end;
+  justify-content: end;
+ 
+  
 }
   @media only screen and (max-width:700px) {
     /*for device less than 700px*/
