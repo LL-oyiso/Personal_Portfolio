@@ -41,6 +41,7 @@ body{
     display:flex;
     /*justify-content:center;*/
     align-items: center;
+    justify-content: center;
    
 }
 nav{
@@ -75,13 +76,13 @@ nav ul li a:hover{
     
 }
 .hero-content{
-    width:920px;
-    flex-basis:40%;
-    position: relative;
-    margin-left:50px;
-    margin-top:40px;
+  width:75%;
+  margin-right:auto;
+  margin-left: auto;
+  margin-top:40px;
    
 } 
+
 .underline{
     border-bottom: 7px solid #ABABAB;
 }
@@ -167,7 +168,7 @@ th {
   .about-me{
 
    /*removed width and stuff*/
-
+   
   }
 
 
@@ -289,6 +290,7 @@ th {
 
   @media only screen and (max-width:700px) {
     /*for device less than 700px*/
+    
     nav ul{
         width:100%;
         background:linear-gradient(hsl(333, 18%, 10%),#e9e1e1);
@@ -325,6 +327,11 @@ th {
     #hero{
         flex-direction: column-reverse;
         margin: 50px 0;
+        
+    }
+    .hero-content h3{
+   
+    
     }
   }
 
@@ -423,6 +430,9 @@ th, td {
   align-items:center;
   justify-content: center;
 }
-
+.hero-content h3{
+ 
+  
+  }
 }
 
