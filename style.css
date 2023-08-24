@@ -336,8 +336,10 @@ th {
   flex-direction: column;
   width:350px;
   
-  margin-left:3px;
-  margin-top:60px;
+  ;
+  cursor: pointer;
+  width: 90px;
+  margin-bottom:40px;
 }
 
 
@@ -345,59 +347,42 @@ input[type=submit] {
   background-color: rgba(217, 217, 217, 0.54);
   color: white;
   padding: 12px 20px;
+  margin-left:3px;
+  margin-top:60px;
   border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  width: 90px;
-  margin-bottom:40px;
+  border-radius: 20px
 }
-input[type=text]{
-  width: 100%; 
 
-
-  
-} 
 .input-name{
   display: flex;
-  justify-content:center ;
-  width:680px;
- 
+  justify-content: start;
 }
 .name{
-margin-right:2px;
-
-
-
+margin-left:20px;
+border:1px solid red;
 }
 
 .input-field{
- margin-left:220px;
- margin-right:0px;
+ margin-left:290px;
  border-radius:10px;
  margin-bottom:20px;
  background-color:  rgba(217, 217, 217, 0.24);
  border:none;
-
- max-width:300px;
-
- 
-}
-
-.input-text{
-  
-  display: flex;
-  justify-content: start;
-  border:1px solid red;
-  width: 600px;
+ border:1px solid red;
 }
 .input-textarea{
+ 
+  
   background-color:  rgba(217, 217, 217, 0.24);
-  border:none;
-  border-radius: 15px;
-  margin-left:130px;
   border:1px solid red;
 }
-
+.input-text{
+  border:1px solid red;
+  display: flex;
+  justify-content: end;
+ 
+  
+}
   @media only screen and (max-width:700px) {
     /*for device less than 700px*/
     
@@ -414,6 +399,7 @@ margin-right:2px;
         display:block;
         margin-top:10px;
         margin-bottom:10px;
+
     }
     nav ul li a{
         color:#fff;
@@ -465,6 +451,7 @@ table{
   text-align: center;
   justify-content: center;
   align-items: center;
+
 }
 
 
