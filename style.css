@@ -351,37 +351,53 @@ input[type=submit] {
   width: 90px;
   margin-bottom:40px;
 }
+input[type=text]{
+  width: 100%; 
 
+
+  
+} 
 .input-name{
   display: flex;
-  justify-content: start;
+  justify-content:center ;
+  width:680px;
+ 
 }
 .name{
-margin-left:20px;
-border:1px solid red;
+margin-right:2px;
+
+
+
 }
 
 .input-field{
- margin-left:290px;
+ margin-left:220px;
+ margin-right:0px;
  border-radius:10px;
  margin-bottom:20px;
  background-color:  rgba(217, 217, 217, 0.24);
  border:none;
- border:1px solid red;
+
+ max-width:300px;
+
+ 
+}
+
+.input-text{
+  
+  display: flex;
+  justify-content: start;
+  border:1px solid red;
+  width: 600px;
 }
 .input-textarea{
- 
-  
   background-color:  rgba(217, 217, 217, 0.24);
+  border:none;
+  border-radius: 15px;
+  margin-left:130px;
   border:1px solid red;
 }
-.input-text{
-  border:1px solid red;
-  display: flex;
-  justify-content: end;
- 
-  
-}
+
   @media only screen and (max-width:700px) {
     /*for device less than 700px*/
     
@@ -398,7 +414,6 @@ border:1px solid red;
         display:block;
         margin-top:10px;
         margin-bottom:10px;
-
     }
     nav ul li a{
         color:#fff;
@@ -450,7 +465,6 @@ table{
   text-align: center;
   justify-content: center;
   align-items: center;
-
 }
 
 
