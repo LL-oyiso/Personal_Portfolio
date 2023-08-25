@@ -351,7 +351,7 @@ input[type=submit] {
   width: 120px;
   margin-bottom:40px;
   font-size: 13px;
-  margin-left:198px;
+  margin-left:130px;
   margin-top:20px;
 }
 
@@ -367,12 +367,13 @@ border:1px solid red;
 }
 
 .input-field{
- margin-left:290px;
+ margin-left:260px;
  border-radius:10px;
  margin-bottom:20px;
  background-color:  rgba(217, 217, 217, 0.24);
  border:none;
  border:1px solid red;
+ width:285px;
 }
 .input-textarea{
  
@@ -403,7 +404,9 @@ border:1px solid red;
   border-radius:15px;
   border:1px solid red;
 }
-
+.email{
+  margin-left:20px;
+}
 .flex-forme{
   display:flex;
   justify-content: start;
