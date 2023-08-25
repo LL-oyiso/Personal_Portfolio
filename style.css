@@ -317,8 +317,8 @@ th {
 }
 
 .form-card{
-  width:720px;
-  height:390px;
+  width:670px;
+  height:330px;
   border: 1px solid #ABABAB;
   border-radius: 15px;
   margin-top:60px;
@@ -348,13 +348,18 @@ input[type=submit] {
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  width: 90px;
+  width: 120px;
   margin-bottom:40px;
+  font-size: 13px;
+  margin-left:198px;
+  margin-top:20px;
 }
 
 .input-name{
   display: flex;
   justify-content: start;
+
+  border:1px solid red;
 }
 .name{
 margin-left:20px;
@@ -381,6 +386,32 @@ border:1px solid red;
   justify-content: end;
  
   
+}
+.message{
+ 
+ 
+  margin-left:20px;
+  margin-top:20px;
+  border:1px solid red;
+}
+.move-textarea{
+ width:290px;
+ height:90px;
+ margin-top:20px;
+ margin-left:217px;
+  background-color:  rgba(217, 217, 217, 0.24);
+  border-radius:15px;
+  border:1px solid red;
+}
+
+.flex-forme{
+  display:flex;
+  justify-content: start;
+  align-items: start;
+  margin-right:auto;
+  margin-left:auto;
+  
+  border:1px solid red;
 }
   @media only screen and (max-width:700px) {
     /*for device less than 700px*/
