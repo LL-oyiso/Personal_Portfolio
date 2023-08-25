@@ -2,7 +2,7 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
-  
+  border:1px solid red;
 }
 
 body{
@@ -40,11 +40,10 @@ body{
     /* margin: 60px 60px; */
     max-width: 100%;
     /*width:100%;*/
-    padding-right:6%;
-    padding-left:6%;
+    margin-right:auto;
+    margin-left:auto;
     box-sizing: border-box;
     overflow: hidden;
-   
 }
 .navbar{
  
@@ -103,8 +102,9 @@ li{
 }
 .hero-content{
   width:75%;
-  margin-right:auto;
-  margin-left: auto;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
   margin-top:40px;
    
 } 
@@ -129,8 +129,8 @@ li{
    
    display:flex;
    flex-direction: column;
-   margin-right:auto;
-   margin-left:auto;
+   justify-content: center;
+   align-items: center;
 }
 .read-me{
     /* margin:auto; 
@@ -193,10 +193,12 @@ th {
   }
 
   .about-me{
-
+     
    /*removed width and stuff*/
    margin-top:50px;
    margin-bottom:30px;
+   margin-right:auto;
+   margin-left:auto;
    
   }
 
@@ -335,7 +337,6 @@ th {
   display:flex;
   flex-direction: column;
   width:350px;
-  
   margin-left:3px;
   margin-top:60px;
 }
@@ -351,15 +352,15 @@ input[type=submit] {
   width: 120px;
   margin-bottom:40px;
   font-size: 13px;
-  margin-left:130px;
+  margin-left:245px;
   margin-top:20px;
 }
 
 .input-name{
   display: flex;
   justify-content: start;
-
-  border:1px solid red;
+ 
+  /* border:1px solid red; */
 }
 .name{
 margin-left:20px;
@@ -372,7 +373,8 @@ border:1px solid red;
  margin-bottom:20px;
  background-color:  rgba(217, 217, 217, 0.24);
  border:none;
- border:1px solid red;
+ /* border:1px solid red; */
+ border: 1px solid  #ABABAB;
  width:285px;
 }
 .input-textarea{
@@ -382,7 +384,7 @@ border:1px solid red;
   border:1px solid red;
 }
 .input-text{
-  border:1px solid red;
+  /* border:1px solid red; */
   display: flex;
   justify-content: end;
  
@@ -390,10 +392,11 @@ border:1px solid red;
 }
 .message{
  
- 
+  
   margin-left:20px;
   margin-top:20px;
-  border:1px solid red;
+  /* border:1px solid red; */
+  font-size:18px;
 }
 .move-textarea{
  width:290px;
@@ -402,10 +405,12 @@ border:1px solid red;
  margin-left:217px;
   background-color:  rgba(217, 217, 217, 0.24);
   border-radius:15px;
-  border:1px solid red;
+  /* border:1px solid red; */
+  border: 1px solid  #ABABAB;
 }
 .email{
   margin-left:20px;
+  font-size:18px;
 }
 .flex-forme{
   display:flex;
@@ -414,7 +419,16 @@ border:1px solid red;
   margin-right:auto;
   margin-left:auto;
   
-  border:1px solid red;
+  /* border:1px solid red; */
+}
+
+.logos{
+  display:flex;
+ 
+}
+.icon{
+  margin-bottom:20px;
+  margin-left:20px;
 }
   @media only screen and (max-width:700px) {
     /*for device less than 700px*/
@@ -423,7 +437,7 @@ border:1px solid red;
         width:100%;
         background:linear-gradient(hsl(333, 18%, 10%),#e9e1e1);
         position:absolute;
-       top:75;
+        top:75;
         right: 0;
         z-index: 2;
     }
