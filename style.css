@@ -123,10 +123,10 @@ margin:0px;
     margin-top: 80px;
 }
 .menu-icon{
-  width:25px;
+  margin-top:10px;
   cursor: pointer;
   display: none;
-  background-color: #ff575a;
+
 }
 
 /* ABOUT SECTION BELOW HERO SECTION */
@@ -156,16 +156,33 @@ margin:0px;
   margin-left:auto;
   
  }
+ .card-about{
+  background-color: rgba(217, 217, 217, 0.13);
+ border-radius: 15px;
+  padding:20px;
+  margin: auto;
+  margin-bottom:30px;
+}
 
+.text-about{
+background-color:white;
+ color:#ABABAB;
+padding:10px;
 
-table{
+}
+
+/* table{
     border-collapse: collapse;
     border-radius: 15px;
     width: 100%;
     overflow: hidden;
-    padding: 300px;   
+    padding: 0;   
+    margin-right:auto;
+    margin-left:auto;
     
-}
+} */
+
+
 
 
 th, td {
@@ -175,12 +192,6 @@ th, td {
    
     
 }
-
-
-
-
-
-
 
 
 th {
@@ -201,15 +212,10 @@ th {
     
   }
 
- 
-
-
-  
-
   .Projects{
-    margin-top:550px;
+    margin-top:70px;
   }
-  .Projects-top{
+  .Projects-top,.Projects-bottom{
 
     display:flex;
     justify-content: center;
@@ -288,12 +294,11 @@ th {
   flex-wrap: wrap;  Allow cards to wrap to the next row 
   justify-content: center;  Center cards horizontally 
 } */
-.Projects-top, .Projects-bottom {
+/* .Projects-top, .Projects-bottom {
   display: flex;
   flex-wrap: wrap; /* Allow cards to wrap to the next row */
-
-  justify-content: center; /* Center cards horizontally */
-}
+  /* justify-content: center;  Center cards horizontally 
+} */ 
 /*
 
 
@@ -340,7 +345,7 @@ th {
   max-width: 300px;
   height: auto;
   border-radius: 15px;
-  margin: 50px auto;
+  margin: 30px 40px;
   padding: 20px;
 
 }
@@ -365,6 +370,7 @@ th {
   cursor: pointer;
   font-size: 16px;
 }
+
 
 
 
@@ -560,11 +566,13 @@ input[type=submit] {
     
     nav ul{
         width:100%;
-        background:linear-gradient(hsl(333, 18%, 10%),#e9e1e1);
+        height: 100%;
+        background:linear-gradient(hsl(333, 18%, 10%),#a05e5e);
         position:absolute;
-        top:75;
+        
         right: 0;
         z-index: 2;
+        display: block;
     }
 
     nav ul li{
@@ -579,10 +587,12 @@ input[type=submit] {
     .menu-icon{
         display:block;
         margin-left: 50px;
+       
     }
     
     #menuList{
      overflow:hidden;
+     
      transition: 0.5s;   
     }
     th, td {
@@ -591,6 +601,16 @@ input[type=submit] {
       height:50px;
       text-align: center;
     }
+   
+table{  
+  flex: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-right:auto;
+  margin-left:auto;
+  border-radius: 15px;  
+}
     #hero{
         flex-direction: column-reverse;
         margin: 50px 0;
@@ -659,7 +679,8 @@ table{
   text-align: center;
   justify-content: center;
   align-items: center;
-
+  margin-right:auto;
+  margin-left:auto;
 }
 
 
@@ -736,7 +757,6 @@ th, td {
   height:50px;
   text-align: center;
 }
-
 
 
 .form-card{
