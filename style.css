@@ -275,30 +275,40 @@ th {
     padding:21px 10px;
   } 
   */   
-  .Projects-top {
+  /*.Projects-top {
     display: flex;
     flex-wrap: wrap; /* Allow cards to wrap to the next row */
-    justify-content: center; /* Center cards horizontally */
-}
+    /* justify-content: center; Center cards horizontally 
+    } */
+
+/*  
 .Projects-bottom {
   display: flex;
+  flex-wrap: wrap;  Allow cards to wrap to the next row 
+  justify-content: center;  Center cards horizontally 
+} */
+.Projects-top, .Projects-bottom {
+  display: flex;
   flex-wrap: wrap; /* Allow cards to wrap to the next row */
+
   justify-content: center; /* Center cards horizontally */
 }
+/*
+
 
 .card {
-    flex: 1; /* Grow to fill available space */
-    margin: 10px; /* Add margin between cards */
+    flex: 1; 
+    margin: 10px; 
     background: white;
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     max-width: 300px;
-    box-sizing: border-box; /* Ensure padding doesn't affect the width */
+    box-sizing: border-box; /* Ensure padding doesn't affect the width 
 }
 
-.card img {
+.img-card {
     max-width: 100%;
     height:200px;
 }
@@ -316,23 +326,64 @@ th {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+}*/
+
+
+.card{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  width: 80%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 15px;
+  margin: 50px auto;
+  padding: 20px;
+
 }
 
-.form-card{
+.img-card {
+  max-width: 100%;
+ /* height: auto;  Automatically adjust the height to maintain aspect ratio */
+ height:200px;
+}
+
+.card-text {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.view-live {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+
+/* .form-card{
   width:670px;
   height:330px;
   border: 1px solid #ABABAB;
   border-radius: 15px;
   margin-top:60px;
   margin-bottom:120px;
-  /* display:flex; */
-  margin-right:auto;
-  margin-left:auto;
-  /* align-items:center; */
-  /* justify-content: center; */
-  background-color: rgba(217, 217, 217, 0.24);
-}
+  /* display:flex;
+    margin-right:auto;
+  margin-left:auto; */
 
+  /* align-items:center; */
+  /* justify-content: center; 
+   background-color: rgba(217, 217, 217, 0.24);
+ 
+} */
+/* 
 .form-content{
   display:flex;
   flex-direction: column;
@@ -356,16 +407,9 @@ input[type=submit] {
   margin-top:20px;
 }
 
-.input-name{
-  display: flex;
-  justify-content: start;
- 
-  /* border:1px solid red; */
-}
-.name{
-margin-left:20px;
-border:1px solid red;
-}
+
+
+
 
 .input-field{
  margin-left:260px;
@@ -373,29 +417,18 @@ border:1px solid red;
  margin-bottom:20px;
  background-color:  rgba(217, 217, 217, 0.24);
  border:none;
- /* border:1px solid red; */
+ 
  border: 1px solid  #ABABAB;
  width:285px;
 }
-.input-textarea{
- 
-  
-  background-color:  rgba(217, 217, 217, 0.24);
-  border:1px solid red;
-}
-.input-text{
-  /* border:1px solid red; */
-  display: flex;
-  justify-content: end;
- 
-  
-}
+
+
 .message{
  
   
   margin-left:20px;
   margin-top:20px;
-  /* border:1px solid red; */
+
   font-size:18px;
 }
 .move-textarea{
@@ -405,7 +438,7 @@ border:1px solid red;
  margin-left:217px;
   background-color:  rgba(217, 217, 217, 0.24);
   border-radius:15px;
-  /* border:1px solid red; */
+  
   border: 1px solid  #ABABAB;
 }
 .email{
@@ -419,7 +452,97 @@ border:1px solid red;
   margin-right:auto;
   margin-left:auto;
   
-  /* border:1px solid red; */
+  
+}
+
+.logos{
+  display:flex;
+ 
+}
+.icon{
+  margin-bottom:20px;
+  margin-left:20px;
+} */
+
+.form-card {
+  width: 100%;
+  max-width: 670px;
+  padding: 20px;
+  border: 1px solid #ABABAB;
+  border-radius: 15px;
+  margin: 20px auto;
+  background-color: rgba(217, 217, 217, 0.24);
+  box-sizing: border-box;
+}
+
+.form-content {
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  
+  margin-left:3px;
+margin-top:60px;
+}
+
+
+.input-field,
+.move-textarea {
+  width: 60%;
+  max-width: none;
+  /* margin: 10px 0; */
+  margin-left: 10px 260px;
+  background-color: rgba(217, 217, 217, 0.24);
+  border: 1px solid #ABABAB;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.input-field {
+  height: 40px;
+  margin-left:130px;
+}
+
+.move-textarea {
+  height: 90px;
+  margin-left:90px;
+  margin-top:20px;
+}
+
+.input-field label {
+  font-size: 18px;
+}
+.message{
+  margin-left:20px;
+  font-size:18px;
+  margin-top:20px;
+ 
+}
+
+.email{
+  margin-left:20px;
+  font-size:18px;
+  margin-bottom:40px;
+}
+input[type=submit] {
+  background-color: rgba(217, 217, 217, 0.54);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 120px;
+  max-width:100%;
+  margin-bottom:40px;
+  font-size: 13px;
+  margin-left:115px;
+  margin-top:20px;
+}
+.flex-forme{
+  display:flex;
+  justify-content: start;
+  align-items: start;
+
 }
 
 .logos{
@@ -430,6 +553,7 @@ border:1px solid red;
   margin-bottom:20px;
   margin-left:20px;
 }
+
   @media only screen and (max-width:700px) {
     /*for device less than 700px*/
     
@@ -475,6 +599,42 @@ border:1px solid red;
    
     
     }
+    
+    .card{
+      flex:1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: white;
+      width: 80%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 15px;
+      margin: 30px auto;
+      padding: 10px;
+    
+    }
+    
+    .img-card {
+      max-width: 100%;
+      height:100px;
+      margin-bottom: 20px;
+      object-fit: contain;
+    }
+    
+    .card-text {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+     /*.card {
+      max-width: 100%;  Cards will take up full width on screens smaller than 768px 
+  }*/
+  .Projects-top, .Projects-bottom {
+    flex-direction: column; /* Stack cards on top of each other */
+}
+.input-field label {
+  font-size: 16px;
+}
   }
 
 
@@ -502,26 +662,42 @@ table{
 }
 
 
-.card {
-  flex: 1; /* Grow to fill available space */
-  margin: 10px; /* Add margin between cards */
+
+/*.card{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: white;
+  width: 80%;
+ 
+  height: auto;
   border-radius: 15px;
-  padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  max-width: 100%;
-  box-sizing: border-box; /* Ensure padding doesn't affect the width */
-  /* height: 200px; */
-  
+  margin: 50px auto;
+  padding: 10px;
+
 }
 
-.card img {
+.img-card {
   max-width: 100%;
   height:100px;
-  margin-bottom: 30px;
+  width: 100px;
+  margin-bottom: 20px;
   object-fit: contain;
+}*/
+
+.card {
+  max-width: 100%; /* Cards will take up full width on phones */
+  margin: 10px 0; /* Remove horizontal margin and add vertical margin for spacing */
+  padding: 15px; /* Reduce padding for smaller screens */
+  border-radius: 15; /* Remove border radius for a clean look if desired */
 }
+
+.img-card {
+  max-width: 100%; /* Images will take up full width on phones */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+}
+
 
 .card-text {
   font-size: 18px;
@@ -565,16 +741,40 @@ th, td {
 .form-card{
   width:400px;
   border: 4px solid #ABABAB;
-  margin-top:60px;
+  margin-top:px;
   display:flex;
   margin-right:auto;
   margin-left:auto;
   align-items:center;
   justify-content: center;
+  margin-bottom:40px;
 }
 .hero-content h3{
  
   
   }
+  .Projects-top, .Projects-bottom {
+    flex-direction: column; /* Stack cards on top of each other */
+  }
+  .input-field label {
+    font-size: 16px;
+  }
+}
+  
+
+   /*.card {
+      max-width: 100%;  Cards will take up full width on screens smaller than 768px 
+  }*/
+
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  
+  .Projects-top, .Projects-bottom {
+    flex-direction: column; /* Stack cards on top of each other */
+}
+.input-field label {
+  font-size: 16px;
+}
 }
 
