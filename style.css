@@ -154,6 +154,7 @@ margin:0px;
   margin-bottom:30px;
   margin-right:auto;
   margin-left:auto;
+  border-radius: 15px;
   
  }
  .card-about{
@@ -171,7 +172,7 @@ padding:10px;
 
 }
 
-/* table{
+ table{
     border-collapse: collapse;
     border-radius: 15px;
     width: 100%;
@@ -180,7 +181,7 @@ padding:10px;
     margin-right:auto;
     margin-left:auto;
     
-} */
+} 
 
 
 
