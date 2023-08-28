@@ -473,15 +473,39 @@ input[type=submit] {
 
 .form-card {
   width: 100%;
-  max-width: 670px;
-  padding: 20px;
+  max-width: 750px;
+  padding: 5px 20px;
   border: 1px solid #ABABAB;
   border-radius: 15px;
-  margin: 20px auto;
+  margin: 149px auto;
   background-color: rgba(217, 217, 217, 0.24);
   box-sizing: border-box;
 }
-
+/*The flex holding chat icon and lets connect*/
+.let{
+display:flex;
+flex-direction:row;
+justify-content: start;
+align-items:start;
+}
+.chat{
+ margin-right:280px;
+ margin-top:20px;
+ 
+}
+.lets{
+  margin-right:2px;
+  margin-left:10px;
+  margin-top:20px; 
+  font-size:20px;
+  width:235px;
+  
+ 
+}
+.line{
+  width:720px;
+  border: 1px solid #ABABAB;
+}
 .form-content {
   width: 100%;
   display:flex;
@@ -544,6 +568,7 @@ input[type=submit] {
   font-size: 13px;
   margin-left:115px;
   margin-top:20px;
+  border: 1px solid #ABABAB;
 }
 .flex-forme{
   display:flex;
