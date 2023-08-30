@@ -122,12 +122,12 @@
                                 <hr class = "line">
                             <div class="form-content">
                                 <div class="flex-forme">
-                                    <label for="lname" class ="email">Email</label>
-                                    <input type = "text"  class ="input-field" style="height:40px">
+                                    <label for="lname" id ="email" class ="email">Email</label>
+                                    <input type = "email"  class ="input-field" style="height:40px">
                                 </div>
     
                                 <div class="flex-forme" >
-                                    <label for="lname" class ="message">Message</label>
+                                    <label for="lname" id ="message" class ="message">Message</label>
                                    <!--Making use of text input as a textarea doe-->
                                    <textarea rows="6" cols="5" style="resize: none;" class ="move-textarea"></textarea>
                                 </div>
@@ -162,39 +162,62 @@
 
        
 
-
+            <script>
+                window.onscroll = function() {myFunction()};
+                
+                var navbar = document.getElementById("navbar");
+                var sticky = navbar.offsetTop;
+                
+                function myFunction() {
+                  if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                  } else {
+                    navbar.classList.remove("sticky");
+                  }
+                }
+                </script>
   
  
-    
+            <script>
+                var menuList = document.getElementById("menuList");
+            
+                menuList.style.maxHeight = "0px";
+            
+                function togglemenu(){
+                    if(menuList.style.maxHeight == "0px")
+                    {
+                        menuList.style.maxHeight = "130px";
+                    }
+                    else{
+                        menuList.style.maxHeight = "0px";
+                    }
+                }
+            </script>
+            <script type="module">
+                // Import the functions you need from the SDKs you need
+                import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-app.js";
+                // TODO: Add SDKs for Firebase products that you want to use
+                // https://firebase.google.com/docs/web/setup#available-libraries
+              
+                // Your web app's Firebase configuration
+                const firebaseConfig = {
+                  apiKey: "AIzaSyBqYNzMtmfrYz4aXoZWJNPmE3QPITwjVvY",
+                  authDomain: "portfolio-7d630.firebaseapp.com",
+                  projectId: "portfolio-7d630",
+                  storageBucket: "portfolio-7d630.appspot.com",
+                  messagingSenderId: "655791625554",
+                  appId: "1:655791625554:web:42dd0fd00160ec4a24168b"
+                };
+              
+                // Initialize Firebase
+                const app = initializeApp(firebaseConfig);
+              </script>
+
+            <script href ="script.js"></script>
 </body>
-<!-- <script>
-window.onscroll = function() {myFunction()};
 
-var navbar = document.getElementById("nvbar");
-var sticky = navbar.offsetTop;
+<!--  -->
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script> -->
 
-<script>
-    var menuList = document.getElementById("menuList");
 
-    menuList.style.maxHeight = "0px";
-
-    function togglemenu(){
-        if(menuList.style.maxHeight == "0px")
-        {
-            menuList.style.maxHeight = "130px";
-        }
-        else{
-            menuList.style.maxHeight = "0px";
-        }
-    }
-</script>
 </html>
