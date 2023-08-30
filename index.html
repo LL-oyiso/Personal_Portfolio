@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src ="script.js"></script>
     <title>Loyiso's Portfolio</title>
 </head>
 <body>
@@ -114,24 +115,27 @@
                         <img src ="JSs.svg">
                         <img src="css_fill_icon.png" alt="">
                         </div>
-                  
-                        <div class="form-card">
-                            <form>
+                       
+ 
+                             <div class="error">
+
+                             </div>
+                        <div  class="form-card" method="GET">
+                            <form id ="form">
                                <div class ="let"><h1 class ="lets">LET'S CONNECT </h1>
-                                <img class ="chat"src ="chat.svg"></div> 
+                                <img class ="chat"src ="chat.svg">
+                               </div> 
                                 <hr class = "line">
-                            <div class="form-content">
+                             <div class="form-content">
                                 <div class="flex-forme">
-                                    <label for="lname" id ="email" class ="email">Email</label>
-                                    <input type = "email"  class ="input-field" style="height:40px">
+                                    <label for="email"  class ="email">Email</label>
+                                    <input type = "email" id ="email" class ="input-field" style="height:40px">
                                 </div>
-    
                                 <div class="flex-forme" >
-                                    <label for="lname" id ="message" class ="message">Message</label>
+                                    <label for="message" class ="message">Message</label>
                                    <!--Making use of text input as a textarea doe-->
-                                   <textarea rows="6" cols="5" style="resize: none;" class ="move-textarea"></textarea>
-                                </div>
-                                
+                                   <textarea rows="6" cols="5" id ="message"  style="resize: none;" class ="move-textarea"></textarea>
+                                </div>    
                                 </div>
                                 
                                 <!-- <label for="lname" class ="name">Name</label> 
@@ -141,7 +145,7 @@
                                    
                                     
                                     <img class ="icon" src="link.svg">
-                                    <input type="submit" class = "submit-btn" value ="Connect">
+                                    <button type="submit" class = "submit-btn">Connect</button>
                                 </div>
                             </form>
                             </div>
@@ -162,7 +166,7 @@
 
        
 
-            <script>
+            <!-- <script>
                 window.onscroll = function() {myFunction()};
                 
                 var navbar = document.getElementById("navbar");
@@ -176,7 +180,7 @@
                   }
                 }
                 </script>
-  
+   -->
  
             <script>
                 var menuList = document.getElementById("menuList");
@@ -193,7 +197,7 @@
                     }
                 }
             </script>
-            <script type="module">
+            <!-- <script type="module">
                 // Import the functions you need from the SDKs you need
                 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-app.js";
                 // TODO: Add SDKs for Firebase products that you want to use
@@ -208,12 +212,52 @@
                   messagingSenderId: "655791625554",
                   appId: "1:655791625554:web:42dd0fd00160ec4a24168b"
                 };
-              
+                    
                 // Initialize Firebase
                 const app = initializeApp(firebaseConfig);
-              </script>
+              </script> -->
 
-            <script href ="script.js"></script>
+
+              <!-- <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyCGu7ZDebdm0Mc_Buq2PkNVY8A4jaCQ_pE",
+    authDomain: "try-ag.firebaseapp.com",
+    projectId: "try-ag",
+    storageBucket: "try-ag.appspot.com",
+    messagingSenderId: "529130362452",
+    appId: "1:529130362452:web:b9b1861d8dfdf8d853ffc1"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script> -->
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyB7Y0Srfe9sjMdSC2BMjLDLn-6RPWGDx5M",
+      authDomain: "port-756c6.firebaseapp.com",
+      projectId: "port-756c6",
+      storageBucket: "port-756c6.appspot.com",
+      messagingSenderId: "577756722600",
+      appId: "1:577756722600:web:cf0550e67f1d694e56d99d"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+            
 </body>
 
 <!--  -->
