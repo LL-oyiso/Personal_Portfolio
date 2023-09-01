@@ -34,13 +34,13 @@ html{
   display:flex;
   justify-content:center;
   z-index: 100;
- /* border: 1px solid red; */
+ border: 1px solid red; 
 
 }
 nav{
 flex:1;
 text-align:right;
-
+border: 1px solid red;
 }
 .nav-flex{
  margin-top:20px;
@@ -53,7 +53,10 @@ text-align:right;
  
 
 }
+#menuList{
+  border: 1px solid red; 
 
+}
 nav ul li{
 list-style:none;
 display:inline-block;
@@ -114,6 +117,7 @@ margin:0px;
   flex-direction: column;
   align-items: center;
   margin-top:40px;
+  height:100vh;
    
 } 
 
@@ -123,9 +127,53 @@ margin:0px;
 .word-color{
     color:#ABABAB;
 }
-#arrow-down{
+.arrow-down{
     margin-top: 80px;
+    margin-bottom:80px;
+    top: calc(100vh - 60px);
+    left: calc(50% - 14px);
+ ;
 }
+/* #arrow-down {
+  position: absolute;
+  top: calc(100vh - 60px);
+  left: calc(50% - 14px);
+  width: 0;
+  height: 30px;
+  border: 2px solid;
+  border-radius: 2px;
+} */
+
+.arrow-down:after {
+  content: " ";
+  position: absolute;
+  top: 12px;
+  left: -10px;
+  width: 16px;
+  height: 16px;
+  border-bottom: 4px solid;
+  border-right: 4px solid;
+  border-radius: 4px;
+  transform: rotateZ(45deg);
+}
+
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 40px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+.arrow-down {
+
+  animation: jumpInfinite 2.8s infinite;
+}
+
 .menu-icon{
   margin-top:10px;
   cursor: pointer;
@@ -621,18 +669,20 @@ margin-top:60px;
     /*for device less than 700px*/
     
     nav ul{
-        width:100%;
-        height: 100%;
+        width:50%;
+        height: 100vh;
         background:linear-gradient(hsl(333, 18%, 10%),#a05e5e);
         position:absolute;
-        
+        display:f1ex;
+        flex-direction: column;
         right: 0;
         z-index: 2;
-        display: block;
+        /* display: block; */
+
     }
 
     nav ul li{
-        display:block;
+        /* display:block; */
         margin-top:10px;
         margin-bottom:10px;
 
@@ -648,7 +698,7 @@ margin-top:60px;
     
     #menuList{
      overflow:hidden;
-     
+     height:100vh;
      transition: 0.5s;   
     }
     th, td {
