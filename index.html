@@ -19,8 +19,8 @@
                     <ul id ="menuList">
                         <div class ="nav-flex">
                         <li><a href =""><img id = "house" src="house.svg"></a></li> 
-                    <li><a href =""><img id = "smile" src = "smile.svg"></a></li>
-                    <li><a href =""><img id = "contact" src ="contact.svg"></a></li> 
+                    <li><a href ="#about-sec"><img id = "smile" src = "smile.svg"></a></li>
+                    <li><a href ="#form-card"><img id = "contact" src ="contact.svg"></a></li> 
                         </div>
                     
                     </ul>
@@ -36,7 +36,7 @@
                     <img id ="arrow-down" src = "arrow.svg" alt ="Arrow indicating to scroll down to view content beneath">
                 </div>
                 </div>
-                    <div class = "about-sec">
+                    <div class = "about-sec" id ="about-sec">
                     
                         <div class ="about-me">
 
@@ -120,8 +120,8 @@
                              <div class="error">
 
                              </div>
-                        <div  class="form-card" method="GET">
-                            <form id ="form">
+                        <div  class="form-card" id ="form-card">
+                            <form id ="form"  method="GET">
                                <div class ="let"><h1 class ="lets">LET'S CONNECT </h1>
                                 <img class ="chat"src ="chat.svg">
                                </div> 
@@ -133,13 +133,13 @@
                                 </div>
                                 <div class="flex-forme" >
                                     <label for="message" class ="message">Message</label>
-                                   <!--Making use of text input as a textarea doe-->
+                            
                                    <textarea rows="6" cols="5" id ="message"  style="resize: none;" class ="move-textarea"></textarea>
                                 </div>    
                                 </div>
                                 
-                                <!-- <label for="lname" class ="name">Name</label> 
-                                <-->
+                                 <!-- <label for="lname" class ="name">Name</label>  -->
+                                
                                 <div class="logos">
                                     <img class ="icon" id ="git" src="git.svg">
                                    
@@ -148,6 +148,19 @@
                                     <button type="submit" class = "submit-btn">Connect</button>
                                 </div>
                             </form>
+                                  <!-- <form>
+                                    <div>
+                                        <label for="name">Name</label>
+                                        <input type ="text" id="email" name="name">
+                                    </div>
+                                    <div>
+                                        <label for ="message">Message</label>
+                                        <input type ="text" id ="message" name ="message">
+
+                                    </div>
+                                    <button type ="submit">Submit</button>
+                                  </form> -->
+                            
                             </div>
                            
                                 

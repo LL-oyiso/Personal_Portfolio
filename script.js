@@ -2,7 +2,7 @@ const email = document.getElementById("email");
 const message = document.getElementById("message");
 const form = document.getElementById("form");
 
-
+console.log(email,message)
 // catching errors before they get submitted and prevent our page from empty content 
 form.addEventListener('submit', (e) => {
   e.preventDefault()

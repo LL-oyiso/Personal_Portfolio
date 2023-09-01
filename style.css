@@ -15,6 +15,9 @@ body{
     color:white;
     margin:0px;
 }
+html{
+  scroll-behavior: smooth;
+}
 .container{
   /* margin: 60px 60px; */
   max-width: 100%;
