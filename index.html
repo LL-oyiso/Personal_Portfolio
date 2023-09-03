@@ -166,21 +166,7 @@
 
        
 
-            <!-- <script>
-                window.onscroll = function() {myFunction()};
-                
-                var navbar = document.getElementById("navbar");
-                var sticky = navbar.offsetTop;
-                
-                function myFunction() {
-                  if (window.pageYOffset >= sticky) {
-                    navbar.classList.add("sticky")
-                  } else {
-                    navbar.classList.remove("sticky");
-                  }
-                }
-                </script>
-   -->
+           
  
             <script>
                 var menuList = document.getElementById("menuList");
@@ -197,70 +183,71 @@
                     }
                 }
             </script>
-            <!-- <script type="module">
-                // Import the functions you need from the SDKs you need
-                import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-app.js";
-                // TODO: Add SDKs for Firebase products that you want to use
-                // https://firebase.google.com/docs/web/setup#available-libraries
-              
-                // Your web app's Firebase configuration
-                const firebaseConfig = {
-                  apiKey: "AIzaSyBqYNzMtmfrYz4aXoZWJNPmE3QPITwjVvY",
-                  authDomain: "portfolio-7d630.firebaseapp.com",
-                  projectId: "portfolio-7d630",
-                  storageBucket: "portfolio-7d630.appspot.com",
-                  messagingSenderId: "655791625554",
-                  appId: "1:655791625554:web:42dd0fd00160ec4a24168b"
-                };
-                    
-                // Initialize Firebase
-                const app = initializeApp(firebaseConfig);
-              </script> -->
+         
+                       <!--FIRE BASE CONNECTION -->
 
+                       
+         <script type ="module">
 
-              <!-- <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-app.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyCGu7ZDebdm0Mc_Buq2PkNVY8A4jaCQ_pE",
-    authDomain: "try-ag.firebaseapp.com",
-    projectId: "try-ag",
-    storageBucket: "try-ag.appspot.com",
-    messagingSenderId: "529130362452",
-    appId: "1:529130362452:web:b9b1861d8dfdf8d853ffc1"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-</script> -->
-
-<script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-app.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-    // Your web app's Firebase configuration
-    const firebaseConfig = {
-      apiKey: "AIzaSyB7Y0Srfe9sjMdSC2BMjLDLn-6RPWGDx5M",
-      authDomain: "port-756c6.firebaseapp.com",
-      projectId: "port-756c6",
-      storageBucket: "port-756c6.appspot.com",
-      messagingSenderId: "577756722600",
-      appId: "1:577756722600:web:cf0550e67f1d694e56d99d"
-    };
-  
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-  </script>
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+              // TODO: Add SDKs for Firebase products that you want to use
+              // https://firebase.google.com/docs/web/setup#available-libraries
             
+              // Your web app's Firebase configuration
+              const firebaseConfig = {
+                apiKey: "AIzaSyC2WzkdwQwSLb3dnW2E8cSsniT5LLA87SU",
+                authDomain: "mlilobase.firebaseapp.com",
+                projectId: "mlilobase",
+                storageBucket: "mlilobase.appspot.com",
+                messagingSenderId: "966090760585",
+                appId: "1:966090760585:web:170fd15ab3aa1ec4284158"
+              };
+            
+              // Initialize Firebase
+              const app = initializeApp(firebaseConfig);
+            
+            
+              import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-database.js";
+              const database = getDatabase();
+                    //listen for submit event
+                    // this following line helps us access the elements of the form
+                    document.getElementById("form-info").addEventListener('submit',formSubmit);
+                    
+            
+                   //submit form
+             function formSubmit(e)
+             {
+                 e.preventDefault();
+                 //Get values of each input field from the form
+                 let email = document.querySelector('#email').value;
+                 let message = document.querySelector('#message').value;
+                 sendMessage(email,message);
+             }
+            
+             //Send message to firebase
+             function sendMessage(email,message)
+             {
+                 const db = getDatabase();
+                 set(ref(db, 'users/'+ Math.floor(Math.random()*200000)),{
+                     email: email,
+                     message:message
+                 })
+                 .then(() => {
+               //Show Alert Message(5)
+            //  document.querySelector('.alert').style.display = 'block';
+             //Hide Alert Message After Seven Seconds(6)
+            
+            document.getElementById('form-info').reset();
+            }).catch((error) => {
+             alert(error)
+            })
+                
+             }
+                  
+                </script>
 </body>
 
-<!--  -->
+
 
 
 
