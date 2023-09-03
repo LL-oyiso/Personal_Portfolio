@@ -7,8 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src ="script.js"></script>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+  <!-- Google Fonts -->
+  
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    
     <title>Loyiso's Portfolio</title>
 </head>
 <body>
@@ -25,8 +30,44 @@
                     
                     </ul>
                 </nav>
+
+                
                 <img src="mennu.svg" class = "menu-icon" onclick ="togglemenu()">
             </div>
+
+            <!---CODE I WANT TO TEST->
+             <header>
+                <nav> -->
+                   <!-- <a href="#home" id="logo">Site Logo</a> -->
+                  <!-- <img id = "logo" src = "LOYISO TOSE.svg">
+                  <i class="fas fa-bars" id="ham-menu"></i>
+                  <ul id="nav-bar">
+                    <li> -->
+                      <!-- <a href="#home">Home</a> -->
+                      <!-- <a href =""><img id = "house" src="house.svg"></a>
+                    </li>
+                    <li> -->
+                      <!-- <a href="#about">About</a> -->
+                      <!-- <a href ="#about-sec"><img id = "smile" src = "smile.svg"></a>
+                    </li>
+                    <li> -->
+                      <!-- <a href="#services">Services</a> -->
+                      <!-- <a href ="#form-card"><img id = "contact" src ="contact.svg"></a>
+                    </li>
+                    <li>
+                      <a href="#team">Download cv</a>
+                    </li>
+                    <li>
+                      <a href="#contact">Contact</a>
+                    </li>
+                  </ul>
+                </nav>
+              </header>
+              <section id="home"> -->
+                <!-- <h1>Home Section</h1>
+              </section> --> 
+          
+            
             <div id="hero">
                 <!-- <h1>Hello, <span class ="underline">I'm Loyiso</span></h1> -->
                 <div class ="hero-content">
@@ -131,7 +172,7 @@
 
                              </div>
                         <div  class="form-card" id ="form-card">
-                            <form id ="form"  method="GET">
+                            <form id ="form"  method="POST">
                                <div class ="let"><h1 class ="lets">LET'S CONNECT </h1>
                                 <img class ="chat"src ="chat.svg">
                                </div> 
@@ -155,7 +196,7 @@
                                    
                                     
                                     <img class ="icon" src="link.svg">
-                                    <button type="submit" class = "submit-btn">Connect</button>
+                                    <button type="submit" id ="submit" class = "submit-btn" sendMessage()>Connect</button>
                                 </div>
                             </form>
                                   <!-- <form>
@@ -209,7 +250,7 @@
          
                        <!--FIRE BASE CONNECTION -->
 
-                       
+
          <script type ="module">
 
             import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
@@ -234,7 +275,7 @@
               const database = getDatabase();
                     //listen for submit event
                     // this following line helps us access the elements of the form
-                    document.getElementById("form-info").addEventListener('submit',formSubmit);
+                    document.getElementById("form").addEventListener('submit',formSubmit);
                     
             
                    //submit form
@@ -260,7 +301,7 @@
             //  document.querySelector('.alert').style.display = 'block';
              //Hide Alert Message After Seven Seconds(6)
             
-            document.getElementById('form-info').reset();
+            document.getElementById('form').reset();
             }).catch((error) => {
              alert(error)
             })
@@ -268,6 +309,8 @@
              }
                   
                 </script>
+
+<script src ="script.js"></script>
 </body>
 
 
