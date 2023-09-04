@@ -128,7 +128,7 @@ margin:0px;
 }
 .arrow{
   margin-top:100px;
-  height:100vh;
+  height:30vh;
 }
 .arrow-down{
   
@@ -202,6 +202,11 @@ margin:0px;
   margin-left:50px;
   font-size:25px;
 }
+/* SCROLL TO REVEAL */
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
 .about-me{
      
   /*removed width and stuff*/
