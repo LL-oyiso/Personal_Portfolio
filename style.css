@@ -97,6 +97,16 @@ margin:0px;
      /* : 1px solid red;  */
  }
 
+ #dwn-btn{
+  background-color: none;
+  border: 2px solid white;
+  margin-right:18px;
+  margin-top:10px;
+  background: none;
+  color:white;
+  font-family:  'Krona One', sans-serif;
+  height:60px;
+  width:110px; }
 
 /* HERO SECTION BELOW NAV AREA */
 

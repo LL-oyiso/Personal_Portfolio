@@ -1,6 +1,6 @@
 //SCROLL TO REVEAL
 ScrollReveal().reveal('.about-sec');
-ScrollReveal().reveal('.about-sec',{delay:900});
+ScrollReveal().reveal('.about-sec',{delay:350});
 
 // validation code
 // function ValidateEmail(inputText)
