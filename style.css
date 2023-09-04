@@ -633,6 +633,13 @@ margin-top:60px;
   font-size:18px;
   margin-bottom:40px;
 }
+
+.invalid-email {
+  border: 2px solid red;
+}
+.error-message {
+  color: red;
+}
 .submit-btn {
   background-color: rgba(217, 217, 217, 0.54);
   color: white;
