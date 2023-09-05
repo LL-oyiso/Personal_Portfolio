@@ -175,6 +175,7 @@
                              <div class="error">
 
                              </div>
+                            
                         <div  class="form-card" id ="form-card">
                             <form name ="form" id ="form"  method="POST">
                                <div class ="let"><h1 class ="lets">LET'S CONNECT </h1>
@@ -189,7 +190,7 @@
                                 <div class="flex-forme" >
                                     <label for="message" class ="message">Message</label>
                             
-                                   <textarea rows="6" cols="5" id ="message"  style="resize: none;" class ="move-textarea"></textarea>
+                                   <textarea rows="6" cols="5" id ="message"  style="resize: none;"  class ="move-textarea" onchange="validateMessage(this)"></textarea>
                                 </div>    
                                 </div>
                                 
@@ -200,9 +201,15 @@
                                    
                                     
                                     <img class ="icon" src="link.svg">
-                                    <button type="submit" id ="submit" class = "submit-btn" sendMessage()  onclick="ValidateEmail(document.form.email)">Connect</button>
+                                    <button type="submit" id ="submit" class = "submit-btn" sendMessage()  onclick="ValidateEmail(document.form.email)" onclick="ValidateMessage(document.form.message)"  >Connect</button>
+                                    <div class="scroll">
+                                        <button id ="scroll">^</button>
+                                    </div>
+                                  
                                 </div>
                             </form>
+
+
                                   <!-- <form>
                                     <div>
                                         <label for="name">Name</label>
@@ -215,8 +222,10 @@
                                     </div>
                                     <button type ="submit">Submit</button>
                                   </form> -->
-                            
+                                  
+                             
                             </div>
+                          
                            
                                 
                            

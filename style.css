@@ -214,8 +214,15 @@ margin:0px;
 }
 /* SCROLL TO REVEAL */
 html.sr .load-hidden {
-  visibility: hidden;
+   visibility: hidden; 
+  scroll-behavior: smooth;
+          -webkit-transition: all 1s ease-in-out;
+     -moz-transition: all 1s ease-in-out;
+      -ms-transition: all 1s ease-in-out;
+       -o-transition: all 1s ease-in-out;
+          transition: all 1s ease-in-out;
 }
+
 
 .about-me{
      
@@ -691,7 +698,34 @@ margin-top:60px;
   margin-bottom:20px;
   margin-left:20px;
 }
+.scroll{
 
+
+
+ }
+ #scroll
+ {
+width:38px;
+height: 80px;
+margin-left:680px;
+background: transparent;
+border: 1px solid white;
+background-color: rgba(217, 217, 217, 0.15);
+border-radius: 48%;
+color:white;
+
+font-size: 22px;
+
+
+
+}
+.contact{
+  display:flex;
+  align-items:center;
+}
+
+ 
+ 
   @media screen and (max-width:700px) {
     /*for device less than 700px*/
     
@@ -903,6 +937,7 @@ th, td {
   justify-content: center;
   margin-bottom:40px;
 }
+
 .hero-content h3{
  
   

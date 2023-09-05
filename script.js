@@ -1,11 +1,24 @@
 //SCROLL TO REVEAL
 ScrollReveal().reveal('.about-sec');
-ScrollReveal().reveal('.about-sec',{delay:350});
+ScrollReveal().reveal('.about-sec',{delay:200});
 
+
+
+const btn = document.getElementById('scroll')
+
+btn.addEventListener('click', () => {
+
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth',
+    })
+    // Scrolling to the top of a page
+})
 // validation code
 // function ValidateEmail(inputText)
 // {
- var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+//  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 // if(inputText.value.match(mailformat))
 // {
 // alert("Valid email address!");
@@ -35,3 +48,20 @@ function validateEmail(input) {
         errorElement.textContent = "";
     }
 }
+
+
+function validatemessage(input) {
+    var message = input.value;
+    var messagePattern =/^[^0-9][a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+    var errorElement = document.getElementById("email-error");
+
+    if (!messagePattern.test(message)) {
+        input.classList.add("invalid-message");
+        errorElement.textContent = "Message can not start with a number.";
+    } else {
+        input.classList.remove("invalid-message");
+        errorElement.textContent = "";
+    }
+}
+
