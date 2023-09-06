@@ -13,7 +13,7 @@ btn.addEventListener('click', () => {
         left: 0,
         behavior: 'smooth',
     })
-    // Scrolling to the top of a page
+    
 })
 // validation code
 // function ValidateEmail(inputText)

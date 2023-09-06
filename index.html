@@ -20,7 +20,7 @@
 </head>
 <body>
     <div class = "container">
-            <div class ="navbar" >
+            <!-- <div class ="navbar" >
                 <img id = "logo" src = "LOYISO TOSE.svg">
                 <nav>
                     <ul id ="menuList">
@@ -36,7 +36,30 @@
 
                 
                 <img src="mennu.svg" class = "menu-icon" onclick ="togglemenu()">
-            </div>
+            </div> -->
+
+            <div class="nav">
+                <input type="checkbox" id="nav-check">
+                <div class="nav-header">
+                  <div class="nav-title">
+                    <img id = "logo" src = "LOYISO TOSE.svg">
+                  </div>
+                </div>
+                <div class="nav-btn">
+                  <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </label>
+                </div>
+                
+                <div class="nav-links">
+                   <a href =""><img id = "house" src="house.svg"></a> 
+                   <a href ="#about-sec"><img id = "smile" src = "smile.svg"></a>
+                   <a href ="#form-card"><img id = "contact" src ="contact.svg"></a> 
+                   <!-- <button id ="dwn-btn">Download CV</button> -->
+                </div>
+              </div>
 
             <!---CODE I WANT TO TEST->
              <header>
@@ -137,6 +160,7 @@
                         </div>
                     </div>
                    <div class ="Projects">
+                    <h1><span class ="underline">Projects</span></h1>
                     <div class="Projects-top">
                         <div class="card">
                             <h3 class="card-text">Mzamomtsha-Primary School</h3>
@@ -162,8 +186,12 @@
                             </div>
                         </div>
                    </div>
+
+
+                   <div class="languages">
+                    <h1><span class ="underline">My Toolkit</span></h1>
+                  
                     <div class="toolkit">
-                       
                         <img src="react_icon.png" alt="">
                         <img src="html12.png" alt="">
                         <img src="python.svg" alt="">
@@ -171,6 +199,8 @@
                         <img src="css_fill_icon.png" alt="">
                         </div>
                        
+                   </div>
+                    
  
                              <div class="error">
 
@@ -241,10 +271,9 @@
                     
                     
 
-       
-
+            
            
- 
+           
             <script>
                 var menuList = document.getElementById("menuList");
             
@@ -253,12 +282,14 @@
                 function togglemenu(){
                     if(menuList.style.maxHeight == "0px")
                     {
-                        menuList.style.maxHeight = "130px";
+                        menuList.style.maxHeight = "400px";
+                       
                     }
                     else{
                         menuList.style.maxHeight = "0px";
                     }
                 }
+                
             </script>
          
                        <!--FIRE BASE CONNECTION -->
