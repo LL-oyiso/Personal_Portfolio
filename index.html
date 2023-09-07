@@ -108,10 +108,11 @@
                     <h3>A Cape Town based <span class ="word-color">software developer</span> with an interest in 
                     data analytics and a passion for creating <span class ="word-color">memorable</span> and
                     engaging web <span class ="word-color">experiences</span></h3>
+                    <div class = "arrow">
+                        <a href ="#about-sec"> <img class ="arrow-down" src = "arrow.svg" alt ="Arrow indicating to scroll down to view content beneath"> </a>
+                    </div>
                 </div>
-                <div class = "arrow">
-                    <a href ="#about-sec"> <img class ="arrow-down" src = "arrow.svg" alt ="Arrow indicating to scroll down to view content beneath"> </a>
-                </div>
+              
                
                 </div>
 
@@ -143,10 +144,13 @@
                                         <table>
                                                 
                                             <tr>
-                                                <th class ="about" colspan="4" >ABOUT_ME</th>
+                                                <th class ="about" colspan="4" ></th>
                                             </tr>
                                             <tr class ="white">
                                                 <th colspan="8" class = "word-color"><div class = "flexit"><h3> 
+                                                    Passionate Front-End Developer & Data Enthusiast <br>
+
+                                                    👋 Welcome to my digital playground, where technology meets creativity!<br> I'm a dedicated junior front-end web developer with a burning passion for crafting impactful solutions.<br>
                                                     
                                                     🤝 Teamwork is Key: Collaboration is my secret sauce. I believe in the power of collective intelligence, where diverse perspectives and shared ideas fuel extraordinary results. I cherish every opportunity to work alongside talented minds.<br><br>
                                                     
@@ -164,7 +168,7 @@
                                                         <table>
                                                             
                                                             <tr>
-                                                                <th class ="about" colspan="4" >ABOUT_ME</th>
+                                                                <th class ="about" colspan="4" ></th>
                                                             </tr>
                                                             <tr class ="white">
                                                                 <th colspan="8" class = "word-color"><div class = "flexit"><h3> 🌟 Driven by Insights: I thrive on the magic of technology, using it to unlock the stories hidden within data. Whether it's unraveling trends or crafting actionable solutions, I'm your data-driven ally.<br><br>
@@ -269,16 +273,14 @@
                  
                     
  
-                             <div class="error">
-
-                             </div>
+                           
                             
                         <div  class="form-card" id ="form-card">
                             <form name ="form" id ="form"  method="POST">
                                <div class ="let"><h1 class ="lets">LET'S CONNECT </h1>
                                 <img class ="chat"src ="chat.svg">
                                </div> 
-                                <hr class = "line">
+                                <!-- <hr class = "line"> -->
                              <div class="form-content">
                                 <div class="flex-forme">
                                     <label for="email"  class ="email">Email</label>
@@ -311,20 +313,6 @@
                                   
                                 </div>
                             </form>
-
-
-                                  <!-- <form>
-                                    <div>
-                                        <label for="name">Name</label>
-                                        <input type ="text" id="email" name="name">
-                                    </div>
-                                    <div>
-                                        <label for ="message">Message</label>
-                                        <input type ="text" id ="message" name ="message">
-
-                                    </div>
-                                    <button type ="submit">Submit</button>
-                                  </form> -->
                                   
                              
                             </div>
@@ -400,16 +388,19 @@
              {
                  e.preventDefault();
                  //Get values of each input field from the form
+                 let name= document.querySelector('#name').value;
                  let email = document.querySelector('#email').value;
+                 
                  let message = document.querySelector('#message').value;
-                 sendMessage(email,message);
+                 sendMessage(name,email,message);
              }
             
              //Send message to firebase
-             function sendMessage(email,message)
+             function sendMessage(name,email,message)
              {
                  const db = getDatabase();
                  set(ref(db, 'users/'+ Math.floor(Math.random()*200000)),{
+                    name:name,
                      email: email,
                      message:message
                  })

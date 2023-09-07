@@ -251,7 +251,8 @@ html.sr .load-hidden {
   /*removed width and stuff*/
   width:1100px;
   max-width: 100%;
-  margin-top:20px;
+  margin-top:1
+  0px;
   margin-bottom:50px;
   margin-right:auto;
   margin-left:auto;
@@ -684,6 +685,20 @@ margin-top:60px;
  
 }
 
+.toolkit{
+  display:flex;
+  border: 1px solid  #ABABAB;
+  margin-right:auto;
+  margin-left:auto;
+  margin-top:40px;
+  width:750px;
+  gap:2rem;
+  padding-left:30px;
+  padding:30px 0px 30px 30px;
+  border-radius: 18px;
+ }
+
+
 .email{
   margin-left:18px;
   font-size:18px;
@@ -860,6 +875,7 @@ font-size: 22px;
     height: calc(100vh - 50px);
     overflow-y: auto;
   }
+ 
 }
  
  
@@ -924,7 +940,7 @@ font-size: 22px;
       height:50px;
       text-align: center;
     }
-   
+    
 table{  
   flex: auto;
   text-align: center;
@@ -943,7 +959,47 @@ table{
    
     
     }
+    .toolkit {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items horizontally */
+      padding: 10px;
+      width:auto;
+  }
+
+  .toolkit img {
+      margin-bottom: 10px;
+      margin-right:30px;
+      margin-left:30px; /* Add spacing between icons */
+  }
+  .name{
+    flex:1 0 30px;
+  }
+  .input-field{
+    flex:1 0 100px;
+  }
+  .form-content {
+    width: 100%;
+    /* display:flex;
+    flex-direction: column; */
+    display:flex;
+    flex-wrap:wrap;
+  margin-left:3px;
+  margin-top:60px;
+
+  } 
+   .form-card{
+    width:360px;
+    border: 4px solid #ABABAB;
+    margin-top:px;
     
+    /* margin-right:auto;
+    margin-left:auto; */
+    align-items:center;
+    justify-content: center;
+    margin-bottom:40px;
+  }
+  
+  
     .card{
       flex:1;
       display: flex;
@@ -1004,6 +1060,15 @@ table{
   align-items: center;
   margin-right:auto;
   margin-left:auto;
+}
+.toolkit {
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  padding: 20px;
+}
+
+.toolkit img {
+  margin-bottom: 10px; /* Add spacing between icons */
 }
 /* 
 
@@ -1098,13 +1163,30 @@ th, td {
   width:400px;
   border: 4px solid #ABABAB;
   margin-top:px;
-  display:flex;
-  margin-right:auto;
-  margin-left:auto;
+  
+  /* margin-right:auto;
+  margin-left:auto; */
   align-items:center;
   justify-content: center;
   margin-bottom:40px;
 }
+.name{
+  flex:1 0 30px;
+}
+.input-field{
+  flex:1 0 100px;
+}
+.form-content {
+  width: 100%;
+  /* display:flex;
+  flex-direction: column; */
+  display:flex;
+  flex-wrap:wrap;
+margin-left:3px;
+margin-top:60px;
+}
+
+
 
 .hero-content h3{
  
@@ -1137,4 +1219,42 @@ th, td {
 
 /* Your existing styles here */
 
-/* Add responsive styles */
+/* Phones */
+@media screen and (max-width: 375px) and (max-height: 667px) {
+  /* CSS rules for screens with dimensions 375 x 667 */
+  .name{
+    flex:1 0 30px;
+  }
+  .input-field{
+    flex:1 0 100px;
+  }
+  .form-content {
+    width: 100%;
+    /* display:flex;
+    flex-direction: column; */
+    display:flex;
+    flex-wrap:wrap;
+  margin-left:3px;
+  margin-top:60px;
+  }
+  .form-card{
+    width:360px;
+    border: 4px solid #ABABAB;
+    margin-top:px;
+    
+    /* margin-right:auto;
+    margin-left:auto; */
+    align-items:center;
+    justify-content: center;
+    margin-bottom:40px;
+  }
+  
+  /* Add any other responsive styles for your form elements */
+  /* For example, you can adjust font sizes, spacing, or margins */
+}
+
+
+
+
+
+
