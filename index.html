@@ -224,7 +224,13 @@
                                 <div class="flex-forme">
                                     <label for="email"  class ="email">Email</label>
                                     <input type = "email" id ="email" class ="input-field" name="email" style="height:40px" onchange="validateEmail(this)">
+                                    
                                 </div>
+                                <div class="flex-forme">
+                                    <label for="name"  class ="name">Name</label>
+                                    <input type = "name" id ="name" class ="input-field" name="name" style="height:40px" onchange="validateName(this)">
+                                </div>
+                               
                                 <div class="flex-forme" >
                                     <label for="message" class ="message">Message</label>
                             
@@ -239,7 +245,7 @@
                                    
                                     
                                     <img class ="icon" src="link.svg">
-                                    <button type="submit" id ="submit" class = "submit-btn" sendMessage()  onclick="ValidateEmail(document.form.email)" onclick="ValidateMessage(document.form.message)"  >Connect</button>
+                                    <button type="submit" id ="submit" class = "submit-btn" onclick="sendMail()" sendMessage()  onclick="ValidateEmail(document.form.email)" onclick="ValidateMessage(document.form.message)"  >Connect</button>
                                     <div class="scroll">
                                         <button id ="scroll">^</button>
                                     </div>

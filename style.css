@@ -34,9 +34,9 @@ html{
   /* display:flex;
   justify-content:center;
   z-index: 100; */
- /* border: 1px solid red;  */
+ /* border: 1px solid red; } */
 
-}
+
 /* nav{
 flex:1;
 text-align:right; */
@@ -46,8 +46,8 @@ text-align:right; */
  margin-top:20px;
  display:flex;
  padding-right:0px;
- /* border: 1px solid red;  */
- justify-content: end;
+ /* border: 1px solid red; justify-content: end; */
+ 
  
 
  
@@ -640,7 +640,7 @@ margin-top:60px;
 
 .input-field {
   height: 40px;
-  margin-left:130px;
+  margin-left:126px;
 }
 
 .move-textarea {
@@ -653,18 +653,23 @@ margin-top:60px;
   font-size: 18px;
 }
 .message{
-  margin-left:20px;
+  margin-left:16px;
   font-size:18px;
-  margin-top:20px;
+  margin-top:10px;
  
 }
 
 .email{
-  margin-left:20px;
+  margin-left:18px;
   font-size:18px;
   margin-bottom:40px;
 }
 
+.name{
+  margin-left:15px;
+  font-size:18px;
+  margin-bottom:30px;
+}
 .invalid-email {
   border: 2px solid red;
 }

@@ -15,6 +15,38 @@ btn.addEventListener('click', () => {
     })
     
 })
+
+
+
+
+
+function sendMail() {
+    var params = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      message: document.getElementById("message").value,
+    };
+  
+    const serviceID = "service_m9pytk4";
+    const templateID = "template_nawkjla";
+  
+      emailjs.send(serviceID, templateID, params)
+      .then(res=>{
+          document.getElementById("name").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("message").value = "";
+          console.log(res);
+          alert("Your message sent successfully!!")
+  
+      })
+      .catch(err=>console.log(err));
+  
+  }
+
+
+
+
+
 // validation code
 // function ValidateEmail(inputText)
 // {
@@ -46,6 +78,37 @@ function validateEmail(input) {
     } else {
         input.classList.remove("invalid-email");
         errorElement.textContent = "";
+    }
+}
+
+function validateName(input) {
+    // var name = input.value;
+    // var name = document.getElementById('name').value;
+    // var namePattern =/^[a-zA-Z]+ [a-zA-Z]+$/;
+
+    // var errorElement = document.getElementById("email-error");
+
+    // if (!namePattern.test(name)) {
+    //     input.classList.add("invalid-email");
+    //     errorElement.textContent = "Invalid name given.";
+    // } else {
+    //     input.classList.remove("invalid-name");
+    //     errorElement.textContent = "";
+    // }
+
+
+    var regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
+    var name = document.getElementById('name').value;
+    if(!regName.test(name)){
+         input.classList.add("invalid-email");
+        //  errorElement.textContent = "Invalid name given.";
+        // alert('Please enter your full name (first & last name).');
+        document.getElementById('name').focus();
+        return false;
+    }else{
+        input.classList.remove("invalid-name");
+        // alert('Valid name given.');
+        return true;
     }
 }
 
