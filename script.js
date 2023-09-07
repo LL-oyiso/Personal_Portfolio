@@ -1,6 +1,11 @@
 //SCROLL TO REVEAL
 ScrollReveal().reveal('.about-sec');
-ScrollReveal().reveal('.about-sec',{delay:200});
+ScrollReveal().reveal('.about-sec',{delay:250});
+ScrollReveal().reveal('.about-me');
+ScrollReveal().reveal('.about-me',{delay:250});
+ScrollReveal().reveal('.about-readme');
+ScrollReveal().reveal('.about-readme',{delay:250});
+
 
 
 

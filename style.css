@@ -208,10 +208,25 @@ margin:0px;
 .about{
   
   height:70px;
-  text-align: left;
+  text-align: center;
   margin-left:50px;
   font-size:25px;
 }
+.about-me-second{
+  
+  height:70px;
+  text-align: center;
+  margin-left:50px;
+  font-size:25px;
+}
+.about-readme{
+  
+  height:70px;
+  text-align: center;
+  margin-left:50px;
+  font-size:25px;
+}
+
 /* SCROLL TO REVEAL */
 html.sr .load-hidden {
    visibility: hidden; 
@@ -222,20 +237,36 @@ html.sr .load-hidden {
        -o-transition: all 1s ease-in-out;
           transition: all 1s ease-in-out;
 }
-
+.read-me{
+  margin-top:50px;
+  justify-content: space-around;
+  text-align: center;
+}
+.text-services{
+  text-align:center;
+}
 
 .about-me{
      
   /*removed width and stuff*/
   width:1100px;
   max-width: 100%;
-  margin-top:50px;
-  margin-bottom:30px;
+  margin-top:20px;
+  margin-bottom:50px;
   margin-right:auto;
   margin-left:auto;
   border-radius: 15px;
   
  }
+
+ .flexit{
+   
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
  .card-about{
   background-color: rgba(217, 217, 217, 0.13);
  border-radius: 15px;
@@ -285,12 +316,6 @@ th {
     background-color: white;
   }
 
-  .flexit{
-   
-    display:flex;
-    justify-content: space-between;
-    
-  }
 
   .Projects{
     margin-top:90px;
