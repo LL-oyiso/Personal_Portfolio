@@ -27,6 +27,9 @@ html{
   box-sizing: border-box;
   overflow: hidden;
 }
+h3{
+  text-shadow: 1px 0px 0px rgb(97, 96, 96);
+}
 /* .navbar{
  
   position:sticky;
@@ -467,6 +470,7 @@ th {
 .card-text {
   font-size: 18px;
   margin-bottom: 10px;
+  color:rgb(97, 96, 96);
 }
 
 .view-live {
