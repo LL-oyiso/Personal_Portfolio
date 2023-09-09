@@ -228,6 +228,8 @@ margin:0px;
 }
 
 /* SCROLL TO REVEAL */
+
+
 html.sr .load-hidden {
    visibility: hidden; 
   scroll-behavior: smooth;
@@ -713,8 +715,9 @@ label {
 
 /* Style the submit button */
 input[type=submit] {
-  background-color: rgba(217, 217, 217, 0.54);
-  color: white;
+  background-color: rgba(217, 217, 217, 0.24);
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
   padding: 12px 20px;
   border: none;
   border-radius: 10px;
@@ -740,7 +743,8 @@ input[type=submit] {
   padding: 25px 10px;
   border: 1px solid #ABABAB;
   border-radius: 15px;
-  margin: 149px auto;
+  margin: 140px auto ;
+
   /* CHANGE BACKGROUND COLOR HERE FOR READABILITY OF ICONS */
   background-color: rgba(217, 217, 217, 0.24);
   box-sizing: border-box;
@@ -777,6 +781,11 @@ input[type=submit] {
   width:235px;
   
  
+}
+.logo{
+  display:flex;
+  justify-content: start;
+  margin-left:25px;
 }
 
 .icon{
@@ -837,6 +846,7 @@ input[type=submit] {
   border: 2px solid red;
 }
 .error-message {
+  font-size: 10px;            
   color: red;
 }
 .submit-btn {
@@ -880,7 +890,8 @@ margin-top:40px;
  {
 width:38px;
 height: 80px;
-margin-left:690px;
+margin-left:900px;
+margin-top:10px;
 background: transparent;
 border: 1px solid white;
 background-color: rgba(217, 217, 217, 0.15);
@@ -999,59 +1010,52 @@ font-size: 22px;
  
  
   @media screen and (max-width:700px) {
-    /*for device less than 700px*/
-    /* .nav-flex {
+    
+
+    .nav > .nav-btn {
+      display: inline-block;
       position: absolute;
       right: 0px;
-      height: 92vh;
-      top: 8vh;
-      background-color: purple;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 50%;
-      transform: translateX(100%);
-      transition: transform -0.5s ease-in;
-  } */
-    /* nav ul{
-        width:50%;
-        height: 100vh;
-        background:linear-gradient(hsl(333, 18%, 10%),#a05e5e);
-        position:absolute;
-        display:f1ex;
-        flex-direction: column;
-        right: 0;
-        z-index: 2;
-        /* display: block; */
-
-    /* }
-    nav a {
-      float: none;
+      top: 0px;
+      margin-top:23px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
       display: block;
-      text-align: left;
-    } */
-
-    /* nav ul li{
-        display:block;
-        margin-top:10px;
-        margin-bottom:10px;
-
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
     }
-    nav ul li a{
-        color:#fff;
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #070707;
+      height: 70px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 90px;
+      left: 0px;
     }
-    .menu-icon{
-        display:block;
-        margin-left: 50px;
-       
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
     }
-    
-    #menuList{
-     overflow:hidden;
-     height:100vh;
-     transition: 0.5s;   
-   
-    } */
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
      */
     th, td {
       flex-direction: row;
@@ -1096,27 +1100,8 @@ table{
   .input-field{
     flex:1 0 100px;
   }
-  /* .form-content {
-    width: 100%;
-    /* display:flex;
-    flex-direction: column; */
-    /* display:flex;
-    flex-wrap:wrap;
-  margin-left:3px;
-  margin-top:60px; */
-
-  }  
-   .form-card{
-    /* width:360px;
-    border: 4px solid #ABABAB;
-    margin-top:px; */
     
-    /* margin-right:auto;
-    margin-left:auto; */
-    /* align-items:center;
-    justify-content: center;
-    margin-bottom:40px;
-  } */
+ 
   
   
     .card{
@@ -1169,9 +1154,7 @@ table{
       font-size: 18px;
       margin-bottom: 10px;
     }
-     /*.card {
-      max-width: 100%;  Cards will take up full width on screens smaller than 768px 
-  }*/
+    
   .Projects-top, .Projects-bottom {
     flex-direction: column; /* Stack cards on top of each other */
 }
@@ -1180,42 +1163,8 @@ table{
 }
   }
   @media screen and (max-width: 390px) and (max-height: 844px) {
-    .form-card{
-      width:300px;
-      border: 4px solid #ABABAB;
-      margin-top:px;
-      
-      /* margin-right:auto;
-      margin-left:auto; */
-      align-items:center;
-      justify-content: center;
-      margin-bottom:40px;
-    }
-    .name{
-      flex:1 0 30px;
-    }
-    .input-field{
-      flex:1 0 100px;
-    }
-    /* .form-content { */
-      /* width: 100%; */
-      /* display:flex;
-      flex-direction: column; */
-      /* display:flex;
-      flex-wrap:wrap;
-    margin-left:3px;
-    margin-top:60px; */
-    /* } */
-    /* .read-me{
-      flex:1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 80%;
-      max-width: 200px;
-    }
-     */
-}
+   
+   
 
   /* phone responsiveness */
 
@@ -1249,43 +1198,7 @@ table{
 .toolkit img {
   margin-bottom: 10px; /* Add spacing between icons */
 }
-/* 
 
-.nav-flex {
-      position: absolute;
-      right: 0px;
-      height: 92vh;
-      top: 8vh;
-      background-color: purple;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 50%;
-      transform: translateX(100%);
-      transition: transform -0.5s ease-in;
-  } */
-/*.card{
-  flex:1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: white;
-  width: 80%;
- 
-  height: auto;
-  border-radius: 15px;
-  margin: 50px auto;
-  padding: 10px;
-
-}
-
-.img-card {
-  max-width: 100%;
-  height:100px;
-  width: 100px;
-  margin-bottom: 20px;
-  object-fit: contain;
-}*/
 
 .card {
   max-width: 100%; /* Cards will take up full width on phones */
@@ -1338,32 +1251,6 @@ th, td {
 }
 
 
-.form-card{
-  width:400px;
-  border: 4px solid #ABABAB;
-  margin-top:px;
-  
-  /* margin-right:auto;
-  margin-left:auto; */
-  align-items:center;
-  justify-content: center;
-  margin-bottom:40px;
-}
-.name{
-  flex:1 0 30px;
-}
-.input-field{
-  flex:1 0 100px;
-}
-/* .form-content { */
-  /* width: 100%; */
-  /* display:flex;
-  flex-direction: column; */
-  /* display:flex;
-  flex-wrap:wrap;
-margin-left:3px;
-margin-top:60px;
-} */
 
 
 
@@ -1380,9 +1267,6 @@ margin-top:60px;
 }
   
 
-   /*.card {
-      max-width: 100%;  Cards will take up full width on screens smaller than 768px 
-  }*/
 
 
 /* Media queries for responsive design */
@@ -1396,41 +1280,6 @@ margin-top:60px;
 }
 }
 
-/* Your existing styles here */
-
-/* Phones */
-@media screen and (max-width: 375px) and (max-height: 667px) {
-  /* CSS rules for screens with dimensions 375 x 667 */
-  .name{
-    flex:1 0 30px;
-  }
-  .input-field{
-    flex:1 0 100px;
-  }
-  .form-content {
-    width: 100%;
-    /* display:flex;
-    flex-direction: column; */
-    display:flex;
-    flex-wrap:wrap;
-  margin-left:3px;
-  margin-top:60px;
-  }
-  .form-card{
-    width:360px;
-    border: 4px solid #ABABAB;
-    margin-top:px;
-    
-    /* margin-right:auto;
-    margin-left:auto; */
-    align-items:center;
-    justify-content: center;
-    margin-bottom:40px;
-  }
-  
-  /* Add any other responsive styles for your form elements */
-  /* For example, you can adjust font sizes, spacing, or margins */
-}
 
 
 

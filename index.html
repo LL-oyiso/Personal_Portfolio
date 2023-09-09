@@ -50,7 +50,7 @@
                 <div class="nav-links">
                    <a href =""><img id = "house" src="house.svg"></a> 
                    <a href ="#about-sec"><img id = "smile" src = "smile.svg"></a>
-                   <a href ="#form-card"><img id = "contact" src ="contact.svg"></a> 
+                   <a href ="#form"><img id = "contact" src ="contact.svg"></a> 
                    <!-- <button id ="dwn-btn">Download CV</button> -->
                 </div>
               </div>
@@ -268,46 +268,48 @@
                                   
                              
                             </div> --> 
-                            <div class="form-content">
-                                <form action="action_page.php">
-                                   <div class ="let"><h1 class ="lets">LET'S CONNECT </h1> 
-                                  <div class="row">
-                                    <div class="col-25">
-                                      <label for="fname" class="input-text">Name</label>
-                                    </div>
-                                    <div class="col-75">
-                                      <input type="text" id="fname" name="firstname" >
-                                    </div>
-                                  </div>
+                           <div class="form-content">
+        <form name="form" id="form" method="POST" onsubmit="return validateForm()">
+            <div class="let">
+                <h1 class="lets">LET'S CONNECT</h1>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="name" class="input-text">Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="name" name="name">
+                        <p class="error-message" id="name-error"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email" class="input-text">Email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="email" name="email">
+                        <p class="error-message" id="email-error"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Message</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="message" name="message" style="height:100px"></textarea>
+                        <p class="error-message" id="message-error"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" id="submit" value="Send">
+                    <div class="logo">
+                        <img class="icon" id="git" src="git.svg">
+                        <img class="icon" src="link.svg">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
                               
-                                  <div class="row">
-                                      <div class="col-25">
-                                        <label for="email" class="input-text">Email</label>
-                                      </div>
-                                      <div class="col-75">
-                                        <input type="text" id="email" name="email" >
-                                      </div>
-                                    </div>
-                                  
-                                  <div class="row">
-                                    <div class="col-25">
-                                      <label for="subject">Message</label>
-                                    </div>
-                                    <div class="col-75">
-                                      <textarea id="message" name="message" style="height:100px"></textarea>
-                                    </div>
-                                  </div>
-                                  <div class="row">
-                                    <input type="submit" value="Submit">
-                                  
-                                      <img class ="icon" id ="git" src="git.svg">
-                                      <img class ="icon" src="link.svg">
-                               
-                                    
-                                  </div>
-                                  
-                                </form>
-                              </div>
                                   
                           
                            
@@ -324,7 +326,7 @@
                     
                     
                     
-
+          
             
            
            
