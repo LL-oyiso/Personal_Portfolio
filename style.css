@@ -204,15 +204,17 @@ margin:0px;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   text-align: center;
+   margin: 0 50px;
 }
 .about{
   
   height:70px;
   text-align: center;
   margin-left:50px;
-  font-size:25px;
+  font-size:20px;
 }
-.about-me-second{
+/* .about-me-second{
   
   height:70px;
   text-align: center;
@@ -225,7 +227,7 @@ margin:0px;
   text-align: center;
   margin-left:50px;
   font-size:25px;
-}
+} */
 
 /* SCROLL TO REVEAL */
 
@@ -239,14 +241,15 @@ html.sr .load-hidden {
        -o-transition: all 1s ease-in-out;
           transition: all 1s ease-in-out;
 }
-.read-me{
+ .read-me{
   margin-top:50px;
- margin-left:10px;
+
   border:1px solid red;
-  
+  width:1100px;
+  max-width: 100%;
   margin-right:auto;
   margin-left:auto;
-}
+} 
 .text-services{
   text-align:center;
 }
@@ -262,6 +265,8 @@ html.sr .load-hidden {
   margin-right:auto;
   margin-left:auto;
   border-radius: 15px;
+  
+  text-align: center;
   
  }
 
@@ -293,11 +298,11 @@ padding:10px;
     border-radius: 15px;
     width: 100%;
     overflow: hidden;
-    padding: 0;   
-    margin-right:auto;
-    margin-left:auto;
-    
+   
+    margin: 0 auto;
 } 
+
+
 
 
 
@@ -306,6 +311,7 @@ th, td {
     border: 1px solid rgba(217, 217, 217, 0.15);
     height:50px;
     text-align: left;
+    padding: 8px;
    
     
 }
@@ -797,18 +803,6 @@ input[type=submit] {
   margin-bottom:18px;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .col-25, .col-75  {
-    width: 100%;
-    margin-top: 0;
-  
-  }
-  input[type=submit]{
-      margin-right:15px;
-  }
-  
-}
 
 
 
@@ -846,7 +840,7 @@ input[type=submit] {
   border: 2px solid red;
 }
 .error-message {
-  font-size: 10px;            
+  font-size: 14px;
   color: red;
 }
 .submit-btn {
@@ -960,6 +954,67 @@ font-size: 22px;
   display: none;
 }
 
+
+/*** MEDIA QUERIES ***/
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75  {
+    width: 100%;
+    margin-top: 0;
+  
+  }
+  input[type=submit]{
+      margin-right:15px;
+  }
+  .about-me{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    
+    
+  
+  }
+  .read-me{
+     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    width: 80%;
+    font-size:8px;
+  } 
+
+
+  th, td {
+    font-size: 12px; /* Further reduce text size for smaller screens */
+}
+
+
+/* Margins to prevent filling the entire screen */
+.about-sec {
+max-width: 890px; /* Adjust this value as needed */
+margin: 0 auto;
+padding: 20px;
+}
+
+.about{
+  height:70px;
+  text-align: center;
+  margin-left:50px;
+  font-size:12px;
+}
+  
+}
+
+
 @media (max-width:600px) {
   .nav > .nav-btn {
     display: inline-block;
@@ -1005,7 +1060,47 @@ font-size: 22px;
     height: calc(100vh - 50px);
     overflow-y: auto;
   }
- 
+  .about-me{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    
+    
+  
+  }
+  .read-me{
+     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    width: 80%;
+    font-size:8px;
+  } 
+  th, td {
+    font-size: 12px; /* Further reduce text size for smaller screens */
+}
+
+
+/* Margins to prevent filling the entire screen */
+.about-sec {
+max-width: 890px; /* Adjust this value as needed */
+margin: 0 auto;
+padding: 20px;
+}
+
+.about{
+  height:70px;
+  text-align: center;
+  margin-left:50px;
+  font-size:12px;
+}
 }
  
  
@@ -1057,22 +1152,7 @@ font-size: 22px;
       overflow-y: auto;
     }
      */
-    th, td {
-      flex-direction: row;
-      border: 1px solid rgba(217, 217, 217, 0.15);
-      height:50px;
-      text-align: center;
-    }
-    
-table{  
-  flex: auto;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin-right:auto;
-  margin-left:auto;
-  border-radius: 15px;  
-}
+   
     #hero{
         flex-direction: column-reverse;
         margin: 50px 0;
@@ -1124,23 +1204,24 @@ table{
       display: flex;
       flex-direction: column;
       align-items: center;
-     
+      font-size: 10px;
       width: 80%;
       max-width: 400px;
       height: auto;
-      border-radius: 15px;
-      
+      border-radius: 10px;
+      font-size:12px;
       
     
     }
      .read-me{
-      flex:1;
+     flex:1;
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 80%;
       height: auto;
-      max-width: 480px;
+      max-width: 400px;
+      font-size:8px;
     } 
     
     .img-card {
@@ -1161,7 +1242,28 @@ table{
 .input-field label {
   font-size: 16px;
 }
+th, td {
+  font-size: 12px; /* Further reduce text size for smaller screens */
+}
+
+
+/* Margins to prevent filling the entire screen */
+.about-sec {
+max-width: 890px; /* Adjust this value as needed */
+margin: 0 auto;
+padding: 20px;
+}
+
+.about{
+  height:70px;
+  text-align: center;
+  margin-left:50px;
+  font-size:12px;
+}
+
   }
+
+
   @media screen and (max-width: 390px) and (max-height: 844px) {
    
    
@@ -1181,14 +1283,7 @@ table{
     text-align: center;
     margin-top: auto;
 }
-table{  
-  flex: auto;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin-right:auto;
-  margin-left:auto;
-}
+
 .toolkit {
   flex-direction: column; /* Stack items vertically */
   align-items: center; /* Center items horizontally */
@@ -1219,21 +1314,51 @@ table{
 }
 
 .view-live {
-  background-color: #007BFF;
+  background-color: #ABABAB;
   color: white;
   border: none;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 35px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
+  margin-top:10px;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  
+  cursor: pointer;
+  
 }
 
 .about{
   height:70px;
   text-align: center;
   margin-left:50px;
-  font-size:25px;
+  font-size:12px;
 }
+.about-me{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10px;
+  width: 80%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  
+  
+
+}
+.read-me{
+     
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  width: 80%;
+  font-size:8px;
+} 
 
 .flexit{
    
@@ -1243,13 +1368,18 @@ table{
   text-align: center;
   
 } 
+
 th, td {
-  flex-direction: row;
-  border: 1px solid rgba(217, 217, 217, 0.15);
-  height:50px;
-  text-align: center;
+  font-size: 12px; /* Further reduce text size for smaller screens */
+}
 }
 
+/* Margins to prevent filling the entire screen */
+.about-sec {
+max-width: 890px; /* Adjust this value as needed */
+margin: 0 auto;
+padding: 20px;
+}
 
 
 
@@ -1270,7 +1400,7 @@ th, td {
 
 
 /* Media queries for responsive design */
-@media (max-width: 768px) {
+@media screen and(max-width: 768px) {
   
   .Projects-top, .Projects-bottom {
     flex-direction: column; /* Stack cards on top of each other */
@@ -1278,11 +1408,35 @@ th, td {
 .input-field label {
   font-size: 16px;
 }
+th, td {
+  font-size: 14px; /* Reduce text size for smaller screens */
+}
+}
+
+  
+
+@media screen and (max-width: 480px) {
+    th, td {
+        font-size: 12px; /* Further reduce text size for smaller screens */
+    }
+    /* Margins to prevent filling the entire screen */
+
 }
 
 
 
 
+  
 
+/*  
+  .read-me{
+     
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  width: 80%;
+  font-size:8px;
+  }  */
 
 
