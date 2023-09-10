@@ -269,6 +269,21 @@ html.sr .load-hidden {
   text-align: center;
   
  }
+ /*download button  */
+ a{
+  padding: 16px 35px;
+  text-decoration: none;
+  border: rgb(255,181,0) 1px solid;
+  border-radius: 35px;
+  letter-spacing: 2px; 
+  color:white;
+  margin:10% 35%;
+  position: absolute;
+}
+
+a:hover{
+  background-color: rgb(255,181,0);
+}
 
  .flexit{
    
