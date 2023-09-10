@@ -27,54 +27,13 @@ html{
   box-sizing: border-box;
   overflow: hidden;
 }
-/* .navbar{
- 
-  position:sticky;
-  /*justify-content:center;*/
-  /* display:flex;
-  justify-content:center;
-  z-index: 100; */
- /* border: 1px solid red; } */
 
-
-/* nav{
-flex:1;
-text-align:right; */
-/* border: 1px solid red; */
-/* }
-.nav-flex{
- margin-top:20px;
- display:flex;
- padding-right:0px;
- /* border: 1px solid red; justify-content: end; */
- 
  
 
  
 
-} */
-/* #menuList{
-  /* border: 1px solid red;  */
+*/
 
-} */
-/* nav ul li{
-list-style:none;
-display:inline-block;
-margin-right:20px;
-} */
-/*nav ul li a{
-nav ul li a{
-  text-decoration: none;
-  color:#000;
-  font-size:14px;
-}*/
-
-/* nav ul li a:hover{
-color:#ABABAB;
-}
-li{
-margin:0px;
-}  */
 #logo{
    cursor:pointer;
    margin:40px 20px;
@@ -270,20 +229,22 @@ html.sr .load-hidden {
   
  }
  /*download button  */
- a{
-  padding: 16px 35px;
+ .hire{
+  margin-bottom:120px;
+  padding: 16px 16px;
   text-decoration: none;
-  border: rgb(255,181,0) 1px solid;
+  border:  3px solid  #ABABAB ;
   border-radius: 35px;
   letter-spacing: 2px; 
-  color:white;
-  margin:10% 35%;
-  position: absolute;
+  color:#ABABAB;
+  
+  
 }
 
-a:hover{
-  background-color: rgb(255,181,0);
-}
+.hire:hover{
+  background-color:  rgba(0, 0, 0, 0.13);
+  color:white;
+} 
 
  .flexit{
    
