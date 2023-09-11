@@ -812,10 +812,7 @@ padding: 20px;
         margin: 50px 0;
         
     }
-    .hero-content h3{
-   
     
-    }
     .toolkit {
       flex-direction: column; /* Stack items vertically */
       align-items: center; /* Center items horizontally */

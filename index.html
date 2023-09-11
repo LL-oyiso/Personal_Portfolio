@@ -272,8 +272,16 @@
                     </div>
                 </div>
                 <div class="row">
+                    <button class="g-recaptcha" 
+                    data-sitekey="6LeV9hcoAAAAACcOb5QU0KYlq4ZFdtq2ZbhChKhr" 
+                    data-callback='onSubmit' 
+                    data-action='submit'>Submit</button>
+                    <br/>
                     <input type="submit" id="submit" class ="hov" value="Send">
+           
+                   
                     <div class="logo">
+                        
                         <img class="icon" id="git" src="git.svg">
                         <img class="icon" src="link.svg">
                     </div>
@@ -374,9 +382,17 @@
                 
              }
                   
-                </script>
-
+         </script>
+                
+                <script src="https://www.google.com/recaptcha/api.js"></script>
+                <script>
+                    function onSubmit(token) {
+                      document.getElementById("demo-form").submit();
+                    }
+                  </script>
+ 
 <script src ="script.js"></script>
+
 </body>
 
 
