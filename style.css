@@ -55,6 +55,56 @@ html{
   margin:20px 20px;
      /* : 1px solid red;  */
  }
+ 
+.nav {
+  height: 50px;
+  width: 100%;
+
+  position: relative;
+}
+.nav-title{
+  margin-right:900px;
+  margin-top:22px;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+  
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+
 
  #dwn-btn{
   background-color: none;
@@ -108,15 +158,7 @@ html{
     
     
 }
-/* #arrow-down {
-  position: absolute;
-  top: calc(100vh - 60px);
-  left: calc(50% - 14px);
-  width: 0;
-  height: 30px;
-  border: 2px solid;
-  border-radius: 2px;
-} */
+
 
 .arrow-down:after {
   content: " ";
@@ -173,20 +215,8 @@ html{
   margin-left:50px;
   font-size:20px;
 }
-/* .about-me-second{
-  
-  height:70px;
-  text-align: center;
-  margin-left:50px;
-  font-size:25px;
-}
-.about-readme{
-  
-  height:70px;
-  text-align: center;
-  margin-left:50px;
-  font-size:25px;
-} */
+
+ 
 
 /* SCROLL TO REVEAL */
 
@@ -318,116 +348,7 @@ th {
    
     
   }
-  /* mBecause when you apply flex it squeezes into center and you dont get grid layout but the margin top push bottom cards down
-  .Projects-bottom{
-
-    display:flex;
-    justify-content: center;
-    align-items: center;
-  }
-    
-
-  .card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: white;
-    width: 80%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 15px;
-    margin: 50px auto;
-    padding: 20px;
-
-  }
-
-
-
- /* .img-card{
-    margin-top:80px;
-    width:350px;
-    
-  }*/
-
-  /*.view-live{
-    margin-top:30px;
-    margin-bottom:150px;
-    border-radius:20px;
-    border:none;
-    background-color: rgba(171, 171, 171, 1);
-    font-family: 'Krona One', sans-serif;
-    padding:21px 10px;
-  }
-
   
-  .img-card{
-    margin-top:80px;
-    width:300px;
-    height:200px;
-    margin:20px 10px;
-    max-width: 100%;
-  }
-  .view-live{
-    margin-top:30px;
-    margin-bottom:40px;
-    border-radius:20px;
-    border:none;
-    background-color: rgba(171, 171, 171, 1);
-    font-family: 'Krona One', sans-serif;
-    padding:21px 10px;
-  } 
-  */   
-  /*.Projects-top {
-    display: flex;
-    flex-wrap: wrap; /* Allow cards to wrap to the next row */
-    /* justify-content: center; Center cards horizontally 
-    } */
-
-/*  
-.Projects-bottom {
-  display: flex;
-  flex-wrap: wrap;  Allow cards to wrap to the next row 
-  justify-content: center;  Center cards horizontally 
-} */
-/* .Projects-top, .Projects-bottom {
-  display: flex;
-  flex-wrap: wrap; /* Allow cards to wrap to the next row */
-  /* justify-content: center;  Center cards horizontally 
-} */ 
-/*
-
-
-.card {
-    flex: 1; 
-    margin: 10px; 
-    background: white;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 300px;
-    box-sizing: border-box; /* Ensure padding doesn't affect the width 
-}
-
-.img-card {
-    max-width: 100%;
-    height:200px;
-}
-
-.card-text {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.view-live {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}*/
 
 
 .card{
@@ -609,7 +530,28 @@ input[type=submit]:hover{
   margin-bottom:18px;
 }
 
+.scroll{
 
+  margin-top:40px;
+  
+   }
+   #scroll
+   {
+  width:38px;
+  height: 80px;
+  margin-left:890px;
+  background: transparent;
+  border: 1px solid white;
+  background-color: rgba(217, 217, 217, 0.15);
+  border-radius: 48%;
+  color:white;
+  
+  font-size: 22px;
+  
+  
+  
+  }
+  
 
 
 
@@ -681,23 +623,18 @@ input[type=submit]:hover{
   margin-bottom:20px;
   margin-left:20px;
 } */
-.scroll{
 
-margin-top:40px;
-
- }
  #scroll
  {
 width:38px;
-height: 80px;
+height: 70px;
 margin-left:900px;
-margin-top:10px;
+
 background: transparent;
 border: 1px solid white;
 background-color: rgba(217, 217, 217, 0.15);
 border-radius: 48%;
 color:white;
-
 font-size: 22px;
 
 
@@ -710,55 +647,6 @@ font-size: 22px;
 
 
 /* NAV BAR RESPONSIVENESS */
-
-
-.nav {
-  height: 50px;
-  width: 100%;
-
-  position: relative;
-}
-.nav-title{
-  margin-right:900px;
-  margin-top:22px;
-}
-
-.nav > .nav-header {
-  display: inline;
-}
-
-.nav > .nav-header > .nav-title {
-  display: inline-block;
-  font-size: 22px;
-  color: #fff;
-  padding: 10px 10px 10px 10px;
-}
-
-.nav > .nav-btn {
-  display: none;
-}
-
-.nav > .nav-links {
-  display: inline;
-  float: right;
-  font-size: 18px;
-  
-}
-
-.nav > .nav-links > a {
-  display: inline-block;
-  padding: 13px 10px 13px 10px;
-  text-decoration: none;
-  color: #efefef;
-}
-
-.nav > .nav-links > a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.nav > #nav-check {
-  display: none;
-}
 
 
 /*** MEDIA QUERIES ***/
@@ -1012,7 +900,7 @@ th, td {
 
 /* Margins to prevent filling the entire screen */
 .about-sec {
-max-width: 890px; /* Adjust this value as needed */
+max-width: 890px; 
 margin: 0 auto;
 padding: 20px;
 }
@@ -1048,26 +936,26 @@ padding: 20px;
 }
 
 .toolkit {
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
+  flex-direction: column; 
+  align-items: center; 
   padding: 20px;
 }
 
 .toolkit img {
-  margin-bottom: 10px; /* Add spacing between icons */
+  margin-bottom: 10px;
 }
 
 
 .card {
-  max-width: 100%; /* Cards will take up full width on phones */
-  margin: 10px 0; /* Remove horizontal margin and add vertical margin for spacing */
-  padding: 15px; /* Reduce padding for smaller screens */
-  border-radius: 15; /* Remove border radius for a clean look if desired */
+  max-width: 100%; 
+  margin: 10px 0; 
+  padding: 15px; 
+  border-radius: 15; 
 }
 
 .img-card {
-  max-width: 100%; /* Images will take up full width on phones */
-  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  max-width: 100%;
+  height: auto; 
 }
 
 
@@ -1181,8 +1069,7 @@ th, td {
 @media screen and (max-width: 480px) {
     th, td {
         font-size: 12px; /* Further reduce text size for smaller screens */
-    }
-    /* Margins to prevent filling the entire screen */
+    } /* Margins to prevent filling the entire screen */
 
 }
 
@@ -1191,15 +1078,5 @@ th, td {
 
   
 
-/*  
-  .read-me{
-     
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 400px;
-  width: 80%;
-  font-size:8px;
-  }  */
 
 
