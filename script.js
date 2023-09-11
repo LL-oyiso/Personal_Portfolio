@@ -1,9 +1,9 @@
-//SCROLL TO REVEAL
+
 ScrollReveal().reveal('.about-sec');
 ScrollReveal().reveal('.about-sec',{delay:250});
 ScrollReveal().reveal('.about-me');
 ScrollReveal().reveal('.about-me',{delay:250});
-// ScrollReveal().reveal('.read-me');
+
 // ScrollReveal().reveal('.read-me',{delay:250});
 
 
@@ -34,7 +34,7 @@ function sendMail() {
   
     const serviceID = "service_m9pytk4";
     const templateID = "template_nawkjla";
-  
+   
       emailjs.send(serviceID, templateID, params)
       .then(res=>{
           document.getElementById("name").value = "";
