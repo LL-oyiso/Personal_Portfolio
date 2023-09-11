@@ -3,8 +3,8 @@ ScrollReveal().reveal('.about-sec');
 ScrollReveal().reveal('.about-sec',{delay:250});
 ScrollReveal().reveal('.about-me');
 ScrollReveal().reveal('.about-me',{delay:250});
-ScrollReveal().reveal('.about-readme');
-ScrollReveal().reveal('.about-readme',{delay:250});
+// ScrollReveal().reveal('.read-me');
+// ScrollReveal().reveal('.read-me',{delay:250});
 
 
 
@@ -71,22 +71,22 @@ function sendMail() {
 // }
 
 
-function validateEmail(input) {
-    var email = input.value;
-    var emailPattern =/^[^0-9][a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+// function validateEmail(input) {
+//     var email = input.value;
+//     var emailPattern =/^[^0-9][a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
-    var errorElement = document.getElementById("email-error");
+//     var errorElement = document.getElementById("email-error");
 
-    if (!emailPattern.test(email)) {
-        input.classList.add("invalid-email");
-        errorElement.textContent = "Email is invalid. It should not start with a number.";
-    } else {
-        input.classList.remove("invalid-email");
-        errorElement.textContent = "";
-    }
-}
+//     if (!emailPattern.test(email)) {
+//         input.classList.add("invalid-email");
+//         errorElement.textContent = "Email is invalid. It should not start with a number.";
+//     } else {
+//         input.classList.remove("invalid-email");
+//         errorElement.textContent = "";
+//     }
+// }
 
-function validateName(input) {
+// function validateName(input) {
     // var name = input.value;
     // var name = document.getElementById('name').value;
     // var namePattern =/^[a-zA-Z]+ [a-zA-Z]+$/;
@@ -102,34 +102,71 @@ function validateName(input) {
     // }
 
 
-    var regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
-    var name = document.getElementById('name').value;
-    if(!regName.test(name)){
-         input.classList.add("invalid-email");
-        //  errorElement.textContent = "Invalid name given.";
-        // alert('Please enter your full name (first & last name).');
-        document.getElementById('name').focus();
-        return false;
-    }else{
-        input.classList.remove("invalid-name");
-        // alert('Valid name given.');
-        return true;
-    }
-}
+    // var regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
+    // var name = document.getElementById('name').value;
+    // if(!regName.test(name)){
+    //      input.classList.add("invalid-email");
+    //     //  errorElement.textContent = "Invalid name given.";
+    //     // alert('Please enter your full name (first & last name).');
+    //     document.getElementById('name').focus();
+    //     return false;
+    // }else{
+    //     input.classList.remove("invalid-name");
+    //     // alert('Valid name given.');
+    //     return true;
+    // }
 
 
-function validatemessage(input) {
-    var message = input.value;
-    var messagePattern =/^[^0-9][a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
-    var errorElement = document.getElementById("email-error");
+// function validatemessage(input) {
+//     var message = input.value;
+//     var messagePattern =/^[^0-9][a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
-    if (!messagePattern.test(message)) {
-        input.classList.add("invalid-message");
-        errorElement.textContent = "Message can not start with a number.";
-    } else {
-        input.classList.remove("invalid-message");
-        errorElement.textContent = "";
-    }
-}
+//     var errorElement = document.getElementById("email-error");
 
+//     if (!messagePattern.test(message)) {
+//         input.classList.add("invalid-message");
+//         errorElement.textContent = "Message can not start with a number.";
+//     } else {
+//         input.classList.remove("invalid-message");
+//         errorElement.textContent = "";
+//     }
+// }
+
+
+    
+      function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+            var isValid = true;
+
+            // Clear previous error messages
+            document.getElementById("name-error").textContent = "";
+            document.getElementById("email-error").textContent = "";
+            document.getElementById("message-error").textContent = "";
+
+            // Name validation
+            if (name.length < 3) {
+                document.getElementById("name-error").textContent = "Name should be at least 3 characters long.";
+                isValid = false;
+            }
+
+            // Email validation
+            var emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
+            if (!email.match(emailRegex)) {
+                document.getElementById("email-error").textContent = "Please enter a valid email address.";
+                isValid = false;
+            }
+
+            // Message validation
+            if (message.length < 10) {
+                document.getElementById("message-error").textContent = "Message should be at least 10 characters long.";
+                isValid = false;
+            }
+
+            return isValid; // Allow form submission if all checks pass
+
+            
+        }
+  
