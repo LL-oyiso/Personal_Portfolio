@@ -25,148 +25,93 @@ btn.addEventListener('click', () => {
 
 
 
-function sendMail() {
-    var params = {
-      name: document.getElementById("name").value,
-      email: document.getElementById("email").value,
-      message: document.getElementById("message").value,
-    };
+// function sendMail() {
+    
+
+//     var params = {
+//       name: document.getElementById("name").value,
+//       email: document.getElementById("email").value,
+//       message: document.getElementById("message").value,
+//     };
   
-    const serviceID = "service_m9pytk4";
-    const templateID = "template_nawkjla";
+//     const serviceID = "service_m9pytk4";
+//     const templateID = "template_nawkjla";
    
-      emailjs.send(serviceID, templateID, params)
-      .then(res=>{
-          document.getElementById("name").value = "";
-          document.getElementById("email").value = "";
-          document.getElementById("message").value = "";
-          console.log(res);
-          alert("Your message sent successfully!!")
+//       emailjs.send(serviceID, templateID, params)
+//       .then(res=>{
+//           document.getElementById("name").value = "";
+//           document.getElementById("email").value = "";
+//           document.getElementById("message").value = "";
+//           console.log(res);
+//           alert("Your message sent successfully!!")
   
-      })
-      .catch(err=>console.log(err));
+//       })
+//       .catch(err=>console.log(err));
   
-  }
+//   }
 
 
 
-
-
-// validation code
-// function ValidateEmail(inputText)
-// {
-//  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-// if(inputText.value.match(mailformat))
-// {
-// alert("Valid email address!");
-// document.form.email.focus();
-// return true;
-// }
-// else
-// {
-// alert("You have entered an invalid email address!");
-// document.form.email.focus();
-// return false;
-// }
-// }
-
-
-// function validateEmail(input) {
-//     var email = input.value;
-//     var emailPattern =/^[^0-9][a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-
-//     var errorElement = document.getElementById("email-error");
-
-//     if (!emailPattern.test(email)) {
-//         input.classList.add("invalid-email");
-//         errorElement.textContent = "Email is invalid. It should not start with a number.";
-//     } else {
-//         input.classList.remove("invalid-email");
-//         errorElement.textContent = "";
-//     }
-// }
-
-// function validateName(input) {
-    // var name = input.value;
-    // var name = document.getElementById('name').value;
-    // var namePattern =/^[a-zA-Z]+ [a-zA-Z]+$/;
-
-    // var errorElement = document.getElementById("email-error");
-
-    // if (!namePattern.test(name)) {
-    //     input.classList.add("invalid-email");
-    //     errorElement.textContent = "Invalid name given.";
-    // } else {
-    //     input.classList.remove("invalid-name");
-    //     errorElement.textContent = "";
-    // }
-
-
-    // var regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
-    // var name = document.getElementById('name').value;
-    // if(!regName.test(name)){
-    //      input.classList.add("invalid-email");
-    //     //  errorElement.textContent = "Invalid name given.";
-    //     // alert('Please enter your full name (first & last name).');
-    //     document.getElementById('name').focus();
-    //     return false;
-    // }else{
-    //     input.classList.remove("invalid-name");
-    //     // alert('Valid name given.');
-    //     return true;
-    // }
-
-
-
-// function validatemessage(input) {
-//     var message = input.value;
-//     var messagePattern =/^[^0-9][a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-
-//     var errorElement = document.getElementById("email-error");
-
-//     if (!messagePattern.test(message)) {
-//         input.classList.add("invalid-message");
-//         errorElement.textContent = "Message can not start with a number.";
-//     } else {
-//         input.classList.remove("invalid-message");
-//         errorElement.textContent = "";
-//     }
-// }
 
 
     
       function validateForm() {
+       
             var name = document.getElementById("name").value;
             var email = document.getElementById("email").value;
             var message = document.getElementById("message").value;
             var isValid = true;
 
-            // Clear previous error messages
+           
             document.getElementById("name-error").textContent = "";
             document.getElementById("email-error").textContent = "";
             document.getElementById("message-error").textContent = "";
 
-            // Name validation
+        
             if (name.length < 3) {
                 document.getElementById("name-error").textContent = "Name should be at least 3 characters long.";
                 isValid = false;
             }
 
-            // Email validation
             var emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
             if (!email.match(emailRegex)) {
                 document.getElementById("email-error").textContent = "Please enter a valid email address.";
                 isValid = false;
             }
 
-            // Message validation
+           
             if (message.length < 10) {
                 document.getElementById("message-error").textContent = "Message should be at least 10 characters long.";
                 isValid = false;
             }
 
-            return isValid; // Allow form submission if all checks pass
+            return isValid;
 
             
         }
   
+        function sendMail(e) {
+            e.preventDefault();
+
+
+var params = {
+name: document.getElementById("name").value,
+email: document.getElementById("email").value,
+message: document.getElementById("message").value,
+};
+
+const serviceID = "service_m9pytk4";
+const templateID = "template_nawkjla";
+
+emailjs.send(serviceID, templateID, params)
+.then(res=>{
+document.getElementById("name").value = "";
+document.getElementById("email").value = "";
+document.getElementById("message").value = "";
+console.log(res);
+alert("Your message sent successfully!!")
+
+})
+.catch(err=>console.log(err));
+
+}
