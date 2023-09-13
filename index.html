@@ -33,30 +33,28 @@
     <div class = "container">
            
 
-            <div class="nav">
-                <input type="checkbox" id="nav-check">
-                <div class="nav-header">
-                  
-                </div>
-                <div class="nav-btn">
-                  <label for="nav-check">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </label>
-                </div>
-                
-                <div class="nav-links">
-                    <div class="nav-title">
-                        <img id = "logo" src = "LOYISO TOSE.svg">
-                      </div>
-                   <a href =""><img id = "house" src="house.svg"></a> 
-                   <a href ="#about-sec"><img id = "smile" src = "smile.svg"></a>
-                   <a href ="#form"><img id = "contact" src ="contact.svg"></a> 
-                   <!-- <button id ="dwn-btn">Download CV</button> -->
-                </div>
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+              <div class="nav-title">
+               <img id ="logo" src ="LOYISO TOSE.svg">
+              </div>
             </div>
-
+            <div class="nav-btn">
+              <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+            
+            <div class="nav-links">
+               <a href =""><img id = "house" src="house.svg"></a> 
+               <a href ="#about-sec"><img id = "smile" src = "smile.svg"></a>
+               <a href ="#form"><img id = "contact" src ="contact.svg"></a> 
+              
+            </div>
+          </div>
            
           
             
@@ -165,7 +163,7 @@
                                                                 <div class="flexit">
                                                                     <h3>Web development</h3>
                                                                     
-                                                                    <h3>Database design</h3>
+                                                                    <h3>Database </h3>
                                                                   
                                                                 </div>
                                                             </th>
@@ -266,7 +264,7 @@
                                                                 </div>
                                                                 <div class="row">
                                                                     <div class="col-25">
-                                                                        <label for="subject">Message</label>
+                                                                        <label for="subject">Messsage</label>
                                                                     </div>
                                                                     <div class="col-75">
                                                                         <textarea id="message" name="message" style="height:100px"></textarea>
@@ -274,9 +272,9 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="row">
-                                                                    <!-- <div class="g-recaptcha" data-sitekey="6LdrBxgoAAAAAB95gi_uS6_221fGNC3R0XJ3uG5w"></div> -->
-
-                                                                    <input type="submit" id="submit" class ="hov" value="Send" onclick="sendMail(event)" >
+                                                                    <div class="g-recaptcha" data-sitekey="6LdrBxgoAAAAAB95gi_uS6_221fGNC3R0XJ3uG5w"></div> 
+                                                                    <!-- onclick="sendMail()" -->
+                                                                    <input type="submit" id="submit" class ="hov" value="Send"  >
                                                                     <div class="logo">
                                                                         <img class="icon" id="git" src="git.svg">
                                                                         <img class="icon" src="link.svg">
@@ -314,73 +312,9 @@
            
             
          
-                       <!--FIRE BASE CONNECTION -->
-
-
-         <!-- <script type ="module">
-
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
-              // TODO: Add SDKs for Firebase products that you want to use
-              // https://firebase.google.com/docs/web/setup#available-libraries
-            
-              // Your web app's Firebase configuration
-              const firebaseConfig = {
-                apiKey: "AIzaSyC2WzkdwQwSLb3dnW2E8cSsniT5LLA87SU",
-                authDomain: "mlilobase.firebaseapp.com",
-                projectId: "mlilobase",
-                storageBucket: "mlilobase.appspot.com",
-                messagingSenderId: "966090760585",
-                appId: "1:966090760585:web:170fd15ab3aa1ec4284158"
-              };
-            
-              // Initialize Firebase
-              const app = initializeApp(firebaseConfig);
-            
-            
-              import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-database.js";
-              c
-              
-
-
-
-
-            
-                   //submit form
-             function formSubmit(e)
-             {
-                 e.preventDefault();
-                 //Get values of each input field from the form
-                 let name= document.querySelector('#name').value;
-                 let email = document.querySelector('#email').value;
-                 
-                 let message = document.querySelector('#message').value;
-                 sendMessage(name,email,message);
-             }
-            
-             //Send message to firebase
-             function sendMessage(name,email,message)
-             {
-                 const db = getDatabase();
-                 set(ref(db, 'users/'+ Math.floor(Math.random()*200000)),{
-                    name:name,
-                     email: email,
-                     message:message
-                 })
-                 .then(() => {
-               //Show Alert Message(5)
-            //  document.querySelector('.alert').style.display = 'block';
-             //Hide Alert Message After Seven Seconds(6)
-            
-            document.getElementById('form').reset();
-            }).catch((error) => {
-             alert(error)
-            })
-                
-             }
-                  
-         </script> -->
+         
                
-                <!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
+                <script src="https://www.google.com/recaptcha/api.js"></script> 
 
        <script>
          function validateForm() {
