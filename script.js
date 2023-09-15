@@ -1,4 +1,17 @@
 
+
+const hamburger = document.querySelector('.hamburger');
+const navLink = document.querySelector('.nav__link');
+
+hamburger.addEventListener('click', () => {
+  navLink.classList.toggle('hide');
+});
+
+
+
+
+
+
 ScrollReveal().reveal('.about-sec');
 ScrollReveal().reveal('.about-sec',{delay:250});
 ScrollReveal().reveal('.about-me');
