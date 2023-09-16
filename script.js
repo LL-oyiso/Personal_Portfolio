@@ -67,41 +67,50 @@ btn.addEventListener('click', () => {
 
 
 
+
+// const submitBtn = document.getElementById("submit")
+
+// submitBtn.addEventListener("click", function validateForm(e){
+
+//   e.preventDefault()
     
-      function validateForm() {
+
+
+// })
+    //   function validateForm() {
        
-            var name = document.getElementById("name").value;
-            var email = document.getElementById("email").value;
-            var message = document.getElementById("message").value;
-            var isValid = true;
+    //         var name = document.getElementById("name").value;
+    //         var email = document.getElementById("email").value;
+    //         var message = document.getElementById("message").value;
+    //         var isValid = true;
 
            
-            document.getElementById("name-error").textContent = "";
-            document.getElementById("email-error").textContent = "";
-            document.getElementById("message-error").textContent = "";
+    //         document.getElementById("name-error").textContent = "";
+    //         document.getElementById("email-error").textContent = "";
+    //         document.getElementById("message-error").textContent = "";
 
         
-            if (name.length < 3) {
-                document.getElementById("name-error").textContent = "Name should be at least 3 characters long.";
-                isValid = false;
-            }
+    //         if (name.length < 3) {
+    //             document.getElementById("name-error").textContent = "Name should be at least 3 characters long.";
+    //             isValid = false;
+    //         }
 
-            var emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
-            if (!email.match(emailRegex)) {
-                document.getElementById("email-error").textContent = "Please enter a valid email address.";
-                isValid = false;
-            }
+    //         var emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
+    //         if (!email.match(emailRegex)) {
+    //             document.getElementById("email-error").textContent = "Please enter a valid email address.";
+    //             isValid = false;
+    //         }
 
            
-            if (message.length < 10) {
-                document.getElementById("message-error").textContent = "Message should be at least 10 characters long.";
-                isValid = false;
-            }
+    //         if (message.length < 10) {
+    //             document.getElementById("message-error").textContent = "Message should be at least 10 characters long.";
+    //             isValid = false;
+    //         }
 
-            return isValid;
+    //         return isValid;
 
             
-        }
+    //     }
   
         function sendMail(e) {
             e.preventDefault();
