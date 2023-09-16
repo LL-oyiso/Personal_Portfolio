@@ -521,6 +521,12 @@ input[type=submit]:hover{
   justify-content: start;
   margin-left:25px;
 }
+.g-recaptcha {
+  margin-left: 220px; 
+  
+  width: 100%; 
+  
+}
 
 .icon{
   margin-top:20px;
@@ -685,6 +691,15 @@ padding: 20px;
 }
   
 }
+@media (max-width: 768px) {
+  .g-recaptcha {
+    
+    margin-left:40px;
+  }
+}
+
+
+
 
 
 @media (max-width:600px) {
