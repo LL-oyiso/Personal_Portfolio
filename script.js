@@ -4,16 +4,16 @@
 document.addEventListener("DOMContentLoaded", function() {
 
 
-    // var recaptcha = document.querySelector(".g-recaptcha");
-    // var submitButton = document.getElementById("submit");
+    var recaptcha = document.querySelector(".g-recaptcha");
+    var submitButton = document.getElementById("submit");
   
-    // // Function to enable the submit button
-    // function enableSubmitButton() {
-    //   submitButton.disabled = false;
-    // }
+    // Function to enable the submit button
+    function enableSubmitButton() {
+      submitButton.disabled = false;
+    }
     
     
-    // recaptcha.addEventListener("change", enableSubmitButton);
+    recaptcha.addEventListener("change", enableSubmitButton);
   
     var form = document.getElementById("form");
   
@@ -22,11 +22,11 @@ document.addEventListener("DOMContentLoaded", function() {
       
       event.preventDefault();
 
-    //   if (g-recaptcha.getResponse().length === 0) {
-    //     // If reCAPTCHA is not completed, show an alert
-    //     alert("Please complete the reCAPTCHA before submitting the form.");
-    //     return; // Prevent further form processing
-    //   }
+      if (g-recaptcha.getResponse().length === 0) {
+        // If reCAPTCHA is not completed, show an alert
+        alert("Please complete the reCAPTCHA before submitting the form.");
+        return; // Prevent further form processing
+      }
       var name = document.getElementById("name").value;
       var email = document.getElementById("email").value;
       var message = document.getElementById("message").value;
