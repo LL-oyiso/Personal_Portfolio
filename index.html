@@ -106,10 +106,10 @@
                                         </tr>
                                         <tr class ="white">
                                             <th colspan="8" class = "word-color"><div class = "flexit"><h3> 
-                                               Hello 👋, My name is Loyiso and I am a <br><br>
-                                               passionate Front-End Developer & Data Enthusiast <br>
-
-                                                 Welcome to my digital playground, where technology meets creativity!<br> I'm a dedicated junior front-end web developer with a burning passion for crafting impactful solutions.</h3></h3></div></th>
+                                               Hello 👋, My name is Loyiso and I am a <br>
+                                               passionate Front-End Developer & Data Enthusiast. <br>
+                                                A dedicated junior front-end web developer with a burning passion for crafting impactful solutions.
+                                                 So, welcome to my digital playground, where technology meets creativity!<br> </h3></h3></div></th>
                                         </tr>
                                             <th colspan="4" ></th>
                                         </tr>
@@ -296,9 +296,9 @@
                                                                 <div class="row">
                                                                     <!-- <div class="g-recaptcha" data-sitekey="6LcZNiEoAAAAAEtFUVvy4zpap43YQxyL5HeQ_cuq"></div>  -->
                                                                     <!-- onclick="sendMail()" -->
-                                                                    
+                                                              
                                                                     <div class="g-recaptcha" data-sitekey="6LcZNiEoAAAAAEtFUVvy4zpap43YQxyL5HeQ_cuq" ></div>
-                                                                    <input type="submit" id="submit" class ="hov" value="Send" >
+                                                                    <input type="submit" id="submit" class ="hov" value="Send">
                                                                     <div class="logo">
                                                                         <a href ="https://github.com/LL-oyiso" target ="_blank"><img class="icon" id="git" src="git.svg"></a>
                                                                        <a href="https://www.linkedin.com/in/loyiso-tose/" target="_blank"><img class="icon" src="link.svg"></a>
@@ -326,8 +326,29 @@
                 
             
      </div>
-
+ <script>
+     function enableSubmitButton() {
+        document.getElementById('submit').disabled = false;
+      }
+    
+      
+      function handleSubmit(event) {
+        event.preventDefault();
+        const recaptchaResponse = grecaptcha.getResponse();
+        if (!recaptchaResponse) {
+          alert('Please complete the reCAPTCHA before submitting the form.');
+        } else {
      
+        }
+      }
+    
+     
+      document.getElementById('form').addEventListener('submit', handleSubmit);
+    
+      grecaptcha.ready(function() {
+        grecaptcha.execute('6LcZNiEoAAAAAEtFUVvy4zpap43YQxyL5HeQ_cuq', { action: 'submit' }).then(enableSubmitButton);
+      });
+    </script> 
                 
       
 
