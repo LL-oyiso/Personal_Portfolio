@@ -1,6 +1,26 @@
 
 
+function enableSubmitButton() {
+  document.getElementById('submit').disabled = false;
+}
 
+
+function handleSubmit(event) {
+  event.preventDefault();
+  const recaptchaResponse = grecaptcha.getResponse();
+  if (!recaptchaResponse) {
+    alert('Please complete the reCAPTCHA before submitting the form.');
+  } else {
+
+  }
+}
+
+
+document.getElementById('form').addEventListener('submit', handleSubmit);
+
+grecaptcha.ready(function() {
+  grecaptcha.execute('6LcZNiEoAAAAAEtFUVvy4zpap43YQxyL5HeQ_cuq', { action: 'submit' }).then(enableSubmitButton);
+});
 document.addEventListener("DOMContentLoaded", function() {
 
 

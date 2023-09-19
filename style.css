@@ -30,9 +30,9 @@ html{
 
  
 
-h3{
+/* h3{
   text-shadow: 1px 0px 0px rgb(97, 96, 96);
-}
+} */
 
 */
 
@@ -143,7 +143,7 @@ h3{
     border-bottom: 7px solid #ABABAB;
 }
 .word-color{
-    color:#ABABAB;
+    color:#595959;
 }
 .arrow{
   margin-top:100px;
@@ -263,16 +263,16 @@ html.sr .load-hidden {
   margin-bottom:120px;
   padding: 16px 16px;
   text-decoration: none;
-  border:  3px solid  #ABABAB ;
+  border:  3px solid   ;
   border-radius: 35px;
   letter-spacing: 2px; 
-  color:#ABABAB;
+  color:#595959;
   
   
 }
 
 .hire:hover{
-  background-color: #ABABAB;
+  background-color: #414141;
   color:white;
 } 
 
