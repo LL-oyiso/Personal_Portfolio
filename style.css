@@ -251,7 +251,7 @@ html{
    justify-content: center;
    align-items: center;
    text-align: center;
-   margin: 0 50px;
+   margin: 20px 50px;
 }
 .about{
   
@@ -770,10 +770,10 @@ padding: 20px;
     height: 10px;
     border-top: 2px solid #eee;
   }
-  .nav > .nav-links {
+  /* .nav > .nav-links {
     position: absolute;
-    /* display: block; */
-    width: 60%;
+    
+    width: 70%;
     background-color: #050505;
     height: 90px;
     transition: all 0.3s ease-in;
@@ -781,7 +781,26 @@ padding: 20px;
     top: 90px;
     right: 0px;
 
-  }
+  } */
+
+  .nav > .nav-links {
+    position: absolute;
+    width: 70%;
+    background-color: #050505;
+    height: 0; 
+    transition: height 0.3s ease-in; 
+    overflow-y: hidden;
+    top: 90px;
+    right: 0;
+}
+.nav > #nav-check:checked ~ .nav-links {
+  height: 90px;
+  overflow-y: auto;
+}
+
+.nav > #nav-check:checked {
+  overflow: hidden;
+}
   .nav > .nav-links > a {
     display: flex; /* Use flexbox to stack items vertically */
     flex-direction: column; /* Stack items vertically */
@@ -810,8 +829,7 @@ padding: 20px;
   transform: translateY(-90%);
   margin-left:40px;
   opacity: 0.9;
- 
-  border: 1px solid red;
+
 }
 .nav-links a:hover .tooltip {
   visibility: visible;
