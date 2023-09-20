@@ -277,13 +277,13 @@ html.sr .load-hidden {
 }
  .read-me{
   margin-top:50px;
-
   border:1px solid red;
   width:1100px;
   max-width: 100%;
   margin-right:auto;
   margin-left:auto;
 } 
+
 .text-services{
   text-align:center;
 }
@@ -772,20 +772,52 @@ padding: 20px;
   }
   .nav > .nav-links {
     position: absolute;
-    display: block;
-    width: 80%;
+    /* display: block; */
+    width: 60%;
     background-color: #050505;
-    height: 60px;
+    height: 90px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
     top: 90px;
     right: 0px;
+
   }
- 
   .nav > .nav-links > a {
-    display: block;
-    width: 100%;
-  }
+    display: flex; /* Use flexbox to stack items vertically */
+    flex-direction: column; /* Stack items vertically */
+   
+}
+ .nav-bar{
+ 
+  display:flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  height: 390px;
+  
+ }
+ .tooltip {
+  visibility:visible;
+  background-color: rgba(14, 14, 14, 0.7);
+  color: #ffffff;
+  text-align: right;
+  border-radius: 4px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: 70%; /* Position above the icon */
+  left: 90%;
+  transform: translateY(-90%);
+  margin-left:40px;
+  opacity: 0.9;
+ 
+  border: 1px solid red;
+}
+.nav-links a:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
   .nav > #nav-check:not(:checked) ~ .nav-links {
     height: 0px;
   }
@@ -835,7 +867,12 @@ padding: 20px;
   font-size:12px;
 }
 }
- 
+@media (max-width: 768px) {
+  .nav > .nav-links {
+      display: flex; /* Use flexbox to stack items vertically */
+      flex-direction: column; /* Stack items vertically */
+  }
+}
  
   @media screen and (max-width:700px) {
     
