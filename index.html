@@ -176,31 +176,36 @@
                     </div>
                                         <div class ="Projects">
                                             <h1><span class ="underline">Projects</span></h1>
-                                            <div class="Projects-top">
+                                            <div class="Projects-top ">
                                                 <div class="card">
                                                     <h3 class="card-text">Mzamomtsha-Primary School</h3>
                                                     <img class="img-card" src="Mzamomtsha.png" alt ="image of landing page of the website Mzamomtsha-Primary">
-                                                    <button class="view-live live"><a class=" live" href ="https://symphonious-fudge-fafa73.netlify.app/" target ="_blank">View live</a></button>
+                                                   
+                                                    <a class=" live-two" href ="https://symphonious-fudge-fafa73.netlify.app/" target ="_blank">View live</a>
                                                 </div>
-                                                <div class="card">
+                                                <div class="card" >
                                                     <h3 class="card-text">Exploratory Analysis Olympics</h3>
                                                     <img class="img-card" src="Olympics (1).jpg" alt ="Image of olympics indicating to the user that the project they are about to view is centered around the olympics">
-                                                    <button class="view-live live"><a class="live" href ="https://github.com/LL-oyiso/Olympics_EDA" target ="_blank">View Github</a></button>
+                                                  
+                                                    <a class=" live-two" href ="https://symphonious-fudge-fafa73.netlify.app/" target ="_blank">View in github</a>
                                                 </div>
                                                 </div>
                                                 <div class="Projects-bottom">
                                                     <div class="card">
                                                         <h3 class="card-text">Black Jack game</h3>
                                                         <img class="img-card" src="tax-calculator.jpg">
-                                                        <button class="view-live live"><a class ="live" href ="https://ll-oyiso.github.io/Blackjack/" target ="_blank">View live</a></button>
+                                                     
+                                                        <a class=" live-two" href ="https://ll-oyiso.github.io/Blackjack/" target ="_blank">View live</a>
                                                     </div>
-                                                    <div class="card">
+                                                    <div class="card" >
                                                         <h3 class="card-text">Data Breakdown</h3>
                                                         <img class="img-card" src="PowerBi.jpg" alt ="image of graphs to indicate the project is centered around data dashboard">
-                                                        <button class="view-live live"><a class ="live" href ="https://github.com/LL-oyiso/Data_Profession_Breakdown" target ="_blank">View Github</a></button>
+                                                       
+                                                        <a class=" live-two" href  ="https://github.com/LL-oyiso/Data_Profession_Breakdown" target ="_blank">View in github</a>
                                                     </div>
                                                 </div>
                                         </div>
+
                                         <div class="about-me">
                                             <table>
                                                 <tr>
@@ -218,9 +223,9 @@
                                                 <tr>
                                                     <th colspan="3" class="word-color">
                                                         <div class="flexit">
-                                                            <h3>Web development</h3>
+                                                            <h3  class="Web_heading">Web development</h3>
                                                             
-                                                            <h3>Database </h3>
+                                                            <h3 class="Web_heading">Database </h3>
                                                           
                                                         </div>
                                                     </th>
@@ -254,7 +259,7 @@
                                                         
                                                         💻 Coding & Beyond: While my heart beats for web development, I bring an extra dimension to the table. I'm well-versed in data manipulation, visualization, and analysis using Python libraries like pandas, NumPy, and matplotlib, along with SQL databases. This expertise empowers me to transform raw data into actionable insights.<br><br>
                                                         
-                                                        🌍 Let's Create Together: If you're seeking a passionate, adaptable team player ready to embark on exciting projects and elevate your organization, let's connect! Together, we'll innovate and craft solutions that make a difference.
+                                                        🌍 Let's Create Together: If you're seeking a passionate, adaptable team player ready to embark on exciting projects and elevate your organization,in the meantime view my toolkit down below. let's connect! Together, we'll innovate and craft solutions that make a difference.
                                                         
                                                         Ready to join forces? Let's shape the future, one line of code and one data insight at a time!<br><br><br>
                                                          <a class="hire" href ="Loyiso_Tose_CV.pdf" id ="submit" download="Loyiso_Tose_CV.pdf">Hire me !</a><br><br>
@@ -317,7 +322,7 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="row">
-                                                                    <!-- <div class="g-recaptcha" data-sitekey="6LcZNiEoAAAAAEtFUVvy4zpap43YQxyL5HeQ_cuq"></div>  -->
+                                                                  <!-- <div class="g-recaptcha" data-sitekey="6LcZNiEoAAAAAEtFUVvy4zpap43YQxyL5HeQ_cuq"></div>  -->
                                                                     <!-- onclick="sendMail()" -->
                                                               
                                                                     <div class="g-recaptcha" data-sitekey="6LcZNiEoAAAAAEtFUVvy4zpap43YQxyL5HeQ_cuq" ></div>
@@ -349,35 +354,41 @@
                 
             
      </div>
- <script>
-     function enableSubmitButton() {
-        document.getElementById('submit').disabled = false;
-      }
-    
-      
-      function handleSubmit(event) {
-        event.preventDefault();
-        const recaptchaResponse = grecaptcha.getResponse();
-        if (!recaptchaResponse) {
-          alert('Please complete the reCAPTCHA before submitting the form.');
-        } else {
-     
-        }
-      }
-    
-     
-      document.getElementById('form').addEventListener('submit', handleSubmit);
-    
-      grecaptcha.ready(function() {
-        grecaptcha.execute('6LcZNiEoAAAAAEtFUVvy4zpap43YQxyL5HeQ_cuq', { action: 'submit' }).then(enableSubmitButton);
-      });
-    </script> 
-                
-      
 
+<script>
+
+ 
+function handleSubmit(event) {
+  event.preventDefault();
+  const recaptchaResponse = grecaptcha.getResponse();
+  if (!recaptchaResponse) {
+    alert('Please complete the reCAPTCHA before submitting the form.');
+  } else {
+
+  }
+}
+
+
+document.getElementById('form').addEventListener('submit', handleSubmit);
+
+grecaptcha.ready(function() {
+  grecaptcha.execute('6LcZNiEoAAAAAEtFUVvy4zpap43YQxyL5HeQ_cuq', { action: 'submit' }).then(enableSubmitButton);
+});
+
+</script>
+                <script type="text/javascript" src="vanilla-tilt.js"></script>
+                <script type="text/javascript">
+                  VanillaTilt.init(document.querySelector(".card"), {
+                      max: 25,
+                      speed: 400
+                  });
+                  
+                  
+                  VanillaTilt.init(document.querySelectorAll(".card"));
+              </script> 
                 
  
-
-      <script src = "script.js"></script>
+<script src = "script.js"></script>
+      
 </body>
 </html>

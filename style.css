@@ -124,12 +124,13 @@ html{
     visibility: hidden;
     background-color: rgba(14, 14, 14, 0.7);
     color: #ffffff;
+    font-size:16px;
     text-align: center;
     border-radius: 4px;
     padding: 5px;
     position: absolute;
     z-index: 1;
-    top: 125%; /* Position above the icon */
+    top: 85%; /* Position above the icon */
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
@@ -191,15 +192,19 @@ html{
     color:#595959;
 }
 
+.word-color .Web_heading{
+  color: white;
+}
+
 .animate-charcter
 {
    text-transform: uppercase;
   background-image: linear-gradient(
     -225deg,
     #231557 0%,
-    #b1b1d8 29%,
-    #f1a5be 67%,
-    #c9bf86 100%
+    #6c6ce2 29%,
+    #B0B0B0 67%,
+    #969696 100%
   );
   background-size: auto auto;
   background-clip: border-box;
@@ -209,7 +214,7 @@ html{
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 4s linear infinite;
+  animation: textclip 3.2s linear infinite;
   display: inline-block;
       font-size: 25px;
 }
@@ -337,16 +342,16 @@ html.sr .load-hidden {
   margin-bottom:120px;
   padding: 16px 16px;
   text-decoration: none;
-  border:  3px solid   ;
+  border:  2px solid   ;
   border-radius: 35px;
   letter-spacing: 2px; 
-  color:#595959;
+  color:#231557;
   
   
 }
 
 .hire:hover{
-  background-color: #414141;
+  background-color: #231557;
   color:white;
 } 
 
@@ -413,13 +418,14 @@ th {
     margin-top:90px;
    
     padding:20px 20px;
+    margin-bottom:100px;
   }
   .Projects-top,.Projects-bottom{
     margin-top:40px;
     display:flex;
     justify-content: center;
     align-items: center;
-    margin-bottom:140px;
+    margin-bottom:100;
    
     
   }
@@ -450,11 +456,13 @@ th {
 .card-text {
   font-size: 18px;
   margin-bottom: 10px;
-  color:rgb(180, 180, 180);
+  /* color:rgb(180, 180, 180); */
+  color: #2B3C68;
 }
 
 .view-live {
-  background-color: #ABABAB;
+  /* background-color: #ABABAB; */
+  background-color: #2B3C68;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -466,11 +474,31 @@ th {
 .live{
   text-decoration: none;
   color: white;
+  
  
 }
+.live-two{
+  background-color: #2B3C68;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top:10px;
+  text-decoration: none;
+}
 
+.live-two:hover{
+  background-color: transparent;
+  border: 1px solid #2B3C68;
+  color: #2B3C68;
+}
 .live:hover{
-  background-color: #383737;
+  /* background-color: #383737; */
+  background-color: transparent;
+  border: 1px solid #2B3C68;
+  color: #2B3C68;
 }
 
 /*tool kit*/
@@ -479,7 +507,7 @@ th {
 .languages{
   display:flex;
   flex-direction: column;
-  margin-top:40px;
+  margin-top:140px;
   margin-bottom:10px;
 }
 .toolkit{
@@ -493,6 +521,7 @@ th {
  padding-left:30px;
  padding:30px 0px 30px 30px;
  border-radius: 18px;
+ 
 }
 
 /* CONTACT FORM */

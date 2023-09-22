@@ -1,5 +1,7 @@
 
 
+
+
 function enableSubmitButton() {
   document.getElementById('submit').disabled = false;
 }
@@ -21,19 +23,10 @@ document.getElementById('form').addEventListener('submit', handleSubmit);
 grecaptcha.ready(function() {
   grecaptcha.execute('6LcZNiEoAAAAAEtFUVvy4zpap43YQxyL5HeQ_cuq', { action: 'submit' }).then(enableSubmitButton);
 });
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
-
-
-    // var recaptcha = document.querySelector(".g-recaptcha");
-    // var submitButton = document.getElementById("submit");
-  
-    // // Function to enable the submit button
-    // function enableSubmitButton() {
-    //   submitButton.disabled = false;
-    // }
-    
-    
-    // recaptcha.addEventListener("change", enableSubmitButton);
   
     var form = document.getElementById("form");
   
@@ -42,11 +35,6 @@ document.addEventListener("DOMContentLoaded", function() {
       
       event.preventDefault();
 
-    //   if (g-recaptcha.getResponse().length === 0) {
-    //     // If reCAPTCHA is not completed, show an alert
-    //     alert("Please complete the reCAPTCHA before submitting the form.");
-    //     return; // Prevent further form processing
-    //   }
       var name = document.getElementById("name").value;
       var email = document.getElementById("email").value;
       var message = document.getElementById("message").value;
@@ -75,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
       if (isValid) {
         
         sendMail(event);
-        // alert("You message was sent successfully!")
+      
         form.reset();
         
       }
@@ -91,12 +79,7 @@ document.addEventListener("DOMContentLoaded", function() {
               
            
              
-              // function callback()
-              // {
-              //    const submitBtn = document.getElementById("submit")
-              //    submitBtn.removeAttribute("disabled")
-               
-              // }
+              
   
               function sendMail(e) {
               e.preventDefault();
@@ -150,7 +133,6 @@ ScrollReveal().reveal('.about-sec',{delay:250});
 ScrollReveal().reveal('.about-me');
 ScrollReveal().reveal('.about-me',{delay:250});
 
-// ScrollReveal().reveal('.read-me',{delay:250});
 
 
 
@@ -245,4 +227,18 @@ btn.addEventListener('click', () => {
             
     //     }
   
-    
+    const element = document.querySelector(".js-tilt");
+VanillaTilt.init(element);
+element.addEventListener("tiltChange", callback);
+
+
+element.vanillaTilt.destroy();
+
+
+element.vanillaTilt.getValues();
+
+element.vanillaTilt.reset();
+
+const elements = document.querySelectorAll(".js-tilt");
+VanillaTilt.init(elements);
+
