@@ -2,7 +2,7 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
-  /* border:1px solid red; */
+  
 }
 
 body{
@@ -19,22 +19,14 @@ html{
   scroll-behavior: smooth;
 }
 .container{
-  /* margin: 60px 60px; */
+ 
   max-width: 100%;
-  /*width:100%;*/
+  
   margin-right:auto;
   margin-left:auto;
   box-sizing: border-box;
   overflow: hidden;
 }
-
- 
-
-/* h3{
-  text-shadow: 1px 0px 0px rgb(97, 96, 96);
-} */
-
-*/
 
 #logo{
    cursor:pointer;
@@ -141,7 +133,7 @@ text-shadow: 10px 10px 10px white;
 .nav-bar a {
   padding-top:10px;
   display: inline-block;
-  margin: 0 10px; /* Adjust the spacing between icons */
+  margin: 0 10px; 
   position: relative;
   text-decoration: none;
 }
@@ -157,7 +149,7 @@ text-shadow: 10px 10px 10px white;
     padding: 5px;
     position: absolute;
     z-index: 1;
-    top: 85%; /* Position above the icon */
+    top: 85%; 
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
@@ -476,19 +468,19 @@ th {
 
 .img-card {
   max-width: 100%;
- /* height: auto;  Automatically adjust the height to maintain aspect ratio */
+
  height:200px;
 }
 
 .card-text {
   font-size: 18px;
   margin-bottom: 10px;
-  /* color:rgb(180, 180, 180); */
+
   color: #2B3C68;
 }
 
 .view-live {
-  /* background-color: #ABABAB; */
+  
   background-color: #2B3C68;
   color: white;
   border: none;
@@ -522,7 +514,7 @@ th {
   color: #2B3C68;
 }
 .live:hover{
-  /* background-color: #383737; */
+ 
   background-color: transparent;
   border: 1px solid #2B3C68;
   color: #2B3C68;
@@ -558,7 +550,7 @@ th {
 input[type=text], select, textarea{
   width: 90%;
   max-width: none;
-  /* margin: 10px 0; */
+  
   margin: 10px 26px;
   background-color: rgba(217, 217, 217, 0.24);
   border: 1px solid #ABABAB;
@@ -567,7 +559,7 @@ input[type=text], select, textarea{
   box-sizing: border-box;
 }
 
-/* Style the label to display next to the inputs */
+
 label {
  
   padding: 12px 9px 9px 10px;
@@ -579,7 +571,7 @@ label {
   margin-right:30px;
 }
 
-/* Style the submit button */
+
 input[type=submit] {
   background-color: rgba(131, 131, 131, 0.24);
   color:white;
@@ -601,7 +593,7 @@ input[type=submit]:hover{
   background-color: rgba(73, 73, 73, 0.24);
 }
 
-/* Style the container */
+
 .form-content {
   width: 100%;
   max-width: 780px;
@@ -610,26 +602,26 @@ input[type=submit]:hover{
   border-radius: 15px;
   margin: 140px auto ;
 
-  /* CHANGE BACKGROUND COLOR HERE FOR READABILITY OF ICONS */
+
   background-color: rgba(217, 217, 217, 0.24);
   box-sizing: border-box;
 }
 
-/* Floating column for labels: 25% width */
+
 .col-25 {
   float: left;
   width: 25%;
   margin-top: 6px;
 }
 
-/* Floating column for inputs: 75% width */
+
 .col-75 {
   float: left;
   width: 75%;
   margin-top: 6px;
 }
 
-/* Clear floats after the columns */
+
 .row:after {
   content: "";
   display: table;
@@ -761,7 +753,7 @@ input[type=submit]:hover{
 }
 
 
-/* NAV BAR RESPONSIVENESS */
+
 
 
 /*** MEDIA QUERIES ***/
@@ -803,13 +795,12 @@ input[type=submit]:hover{
 
 
   th, td {
-    font-size: 12px; /* Further reduce text size for smaller screens */
+    font-size: 12px; 
 }
 
 
-/* Margins to prevent filling the entire screen */
 .about-sec {
-max-width: 890px; /* Adjust this value as needed */
+max-width: 890px; 
 margin: 0 auto;
 padding: 20px;
 }
@@ -856,18 +847,6 @@ padding: 20px;
     height: 10px;
     border-top: 2px solid #eee;
   }
-  /* .nav > .nav-links {
-    position: absolute;
-    
-    width: 70%;
-    background-color: #050505;
-    height: 90px;
-    transition: all 0.3s ease-in;
-    overflow-y: hidden;
-    top: 90px;
-    right: 0px;
-
-  } */
 
   .nav > .nav-links {
     position: absolute;
@@ -888,8 +867,8 @@ padding: 20px;
   overflow: hidden;
 }
   .nav > .nav-links > a {
-    display: flex; /* Use flexbox to stack items vertically */
-    flex-direction: column; /* Stack items vertically */
+    display: flex; 
+    flex-direction: column; 
    
 }
  .nav-bar{
@@ -910,7 +889,7 @@ padding: 20px;
   padding: 5px;
   position: absolute;
   z-index: 1;
-  top: 70%; /* Position above the icon */
+  top: 70%; 
   left: 90%;
   transform: translateY(-90%);
   margin-left:40px;
@@ -953,13 +932,13 @@ padding: 20px;
     font-size:8px;
   } 
   th, td {
-    font-size: 12px; /* Further reduce text size for smaller screens */
+    font-size: 12px; 
 }
 
 
-/* Margins to prevent filling the entire screen */
+
 .about-sec {
-max-width: 890px; /* Adjust this value as needed */
+max-width: 890px; 
 margin: 0 auto;
 padding: 20px;
 }
@@ -973,8 +952,8 @@ padding: 20px;
 }
 @media (max-width: 768px) {
   .nav > .nav-links {
-      display: flex; /* Use flexbox to stack items vertically */
-      flex-direction: column; /* Stack items vertically */
+      display: flex; 
+      flex-direction: column; 
   }
 }
  
@@ -991,8 +970,8 @@ padding: 20px;
     }
     
     .toolkit {
-      flex-direction: column; /* Stack items vertically */
-      align-items: center; /* Center items horizontally */
+      flex-direction: column; 
+      align-items: center; 
       padding: 10px;
       width:auto;
   }
@@ -1000,7 +979,7 @@ padding: 20px;
   .toolkit img {
       margin-bottom: 10px;
       margin-right:30px;
-      margin-left:30px; /* Add spacing between icons */
+      margin-left:30px; 
   }
   .name{
     flex:1 0 30px;
@@ -1065,17 +1044,17 @@ padding: 20px;
     }
     
   .Projects-top, .Projects-bottom {
-    flex-direction: column; /* Stack cards on top of each other */
+    flex-direction: column; 
 }
 .input-field label {
   font-size: 16px;
 }
 th, td {
-  font-size: 12px; /* Further reduce text size for smaller screens */
+  font-size: 12px; 
 }
 
 
-/* Margins to prevent filling the entire screen */
+
 .about-sec {
 max-width: 890px; 
 margin: 0 auto;
@@ -1198,13 +1177,13 @@ padding: 20px;
 } 
 
 th, td {
-  font-size: 12px; /* Further reduce text size for smaller screens */
+  font-size: 12px; 
 }
 }
 
-/* Margins to prevent filling the entire screen */
+
 .about-sec {
-max-width: 890px; /* Adjust this value as needed */
+max-width: 890px; 
 margin: 0 auto;
 padding: 20px;
 }
@@ -1214,7 +1193,7 @@ padding: 20px;
 
 
   .Projects-top, .Projects-bottom {
-    flex-direction: column; /* Stack cards on top of each other */
+    flex-direction: column; 
   }
   .input-field label {
     font-size: 16px;
@@ -1224,27 +1203,27 @@ padding: 20px;
 
 
 
-/* Media queries for responsive design */
+
 @media screen and(max-width: 768px) {
   
   .Projects-top, .Projects-bottom {
-    flex-direction: column; /* Stack cards on top of each other */
+    flex-direction: column;
 }
 .input-field label {
   font-size: 16px;
 }
 th, td {
-  font-size: 14px; /* Reduce text size for smaller screens */
+  font-size: 14px; 
 }
 .nav-bar {
   display:flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: flex-start; /* Align items to the left */
-  padding: 0; /* Remove padding */
+  flex-direction: column; 
+  align-items: flex-start; 
+  padding: 0;
 }
 
 .nav-bar a {
-  margin: 5px 0; /* Adjust spacing between stacked items */
+  margin: 5px 0; 
 
 }
 }
@@ -1253,9 +1232,8 @@ th, td {
 
 @media screen and (max-width: 480px) {
     th, td {
-        font-size: 12px; /* Further reduce text size for smaller screens */
-    } /* Margins to prevent filling the entire screen */
-
+        font-size: 12px; 
+    }
 }
 
 
