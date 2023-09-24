@@ -30,9 +30,9 @@ html{
 
  
 
-h3{
+/* h3{
   text-shadow: 1px 0px 0px rgb(97, 96, 96);
-}
+} */
 
 */
 
@@ -128,6 +128,52 @@ text-shadow: 10px 10px 10px white;
 .nav > #nav-check {
   display: none;
 }
+/* Hover on text section */
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  padding: 10px;
+}
+
+.nav-bar a {
+  padding-top:10px;
+  display: inline-block;
+  margin: 0 10px; /* Adjust the spacing between icons */
+  position: relative;
+  text-decoration: none;
+}
+
+
+.tooltip {
+    visibility: hidden;
+    background-color: rgba(14, 14, 14, 0.7);
+    color: #ffffff;
+    font-size:16px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 85%; /* Position above the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+/* Show the tooltip on hover */
+.nav-links a:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Hover on text section */
+
+
+
 #logo{
   margin-top:20px;
   margin-right:750px;
@@ -170,7 +216,40 @@ text-shadow: 10px 10px 10px white;
     border-bottom: 7px solid #ABABAB;
 }
 .word-color{
-    color:#ABABAB;
+    color:#595959;
+}
+
+.word-color .Web_heading{
+  color: white;
+}
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #6c6ce2 29%,
+    #B0B0B0 67%,
+    #969696 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3.2s linear infinite;
+  display: inline-block;
+      font-size: 25px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
 .arrow{
   margin-top:100px;
@@ -233,7 +312,7 @@ text-shadow: 10px 10px 10px white;
    justify-content: center;
    align-items: center;
    text-align: center;
-   margin: 0 50px;
+   margin: 20px 50px;
 }
 .about{
   
@@ -259,13 +338,13 @@ html.sr .load-hidden {
 }
  .read-me{
   margin-top:50px;
-
   border:1px solid red;
   width:1100px;
   max-width: 100%;
   margin-right:auto;
   margin-left:auto;
 } 
+
 .text-services{
   text-align:center;
 }
@@ -290,16 +369,16 @@ html.sr .load-hidden {
   margin-bottom:120px;
   padding: 16px 16px;
   text-decoration: none;
-  border:  3px solid  #ABABAB ;
+  border:  2px solid   ;
   border-radius: 35px;
   letter-spacing: 2px; 
-  color:#ABABAB;
+  color:#231557;
   
   
 }
 
 .hire:hover{
-  background-color: #ABABAB;
+  background-color: #231557;
   color:white;
 } 
 
@@ -364,14 +443,16 @@ th {
 
   .Projects{
     margin-top:90px;
-    background-color:rgba(168, 168, 168, 0.15);
+   
     padding:20px 20px;
+    margin-bottom:100px;
   }
   .Projects-top,.Projects-bottom{
     margin-top:40px;
     display:flex;
     justify-content: center;
     align-items: center;
+    margin-bottom:100;
    
     
   }
@@ -402,11 +483,13 @@ th {
 .card-text {
   font-size: 18px;
   margin-bottom: 10px;
-  color:rgb(180, 180, 180);
+  /* color:rgb(180, 180, 180); */
+  color: #2B3C68;
 }
 
 .view-live {
-  background-color: #ABABAB;
+  /* background-color: #ABABAB; */
+  background-color: #2B3C68;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -418,11 +501,31 @@ th {
 .live{
   text-decoration: none;
   color: white;
+  
  
 }
+.live-two{
+  background-color: #2B3C68;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top:10px;
+  text-decoration: none;
+}
 
+.live-two:hover{
+  background-color: transparent;
+  border: 1px solid #2B3C68;
+  color: #2B3C68;
+}
 .live:hover{
-  background-color: #383737;
+  /* background-color: #383737; */
+  background-color: transparent;
+  border: 1px solid #2B3C68;
+  color: #2B3C68;
 }
 
 /*tool kit*/
@@ -431,7 +534,7 @@ th {
 .languages{
   display:flex;
   flex-direction: column;
-  margin-top:40px;
+  margin-top:140px;
   margin-bottom:10px;
 }
 .toolkit{
@@ -445,6 +548,7 @@ th {
  padding-left:30px;
  padding:30px 0px 30px 30px;
  border-radius: 18px;
+ 
 }
 
 /* CONTACT FORM */
@@ -752,21 +856,72 @@ padding: 20px;
     height: 10px;
     border-top: 2px solid #eee;
   }
-  .nav > .nav-links {
+  /* .nav > .nav-links {
     position: absolute;
-    display: block;
-    width: 80%;
+    
+    width: 70%;
     background-color: #050505;
-    height: 60px;
+    height: 90px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
     top: 90px;
     right: 0px;
-  }
+
+  } */
+
+  .nav > .nav-links {
+    position: absolute;
+    width: 70%;
+    background-color: #050505;
+    height: 0; 
+    transition: height 0.3s ease-in; 
+    overflow-y: hidden;
+    top: 90px;
+    right: 0;
+}
+.nav > #nav-check:checked ~ .nav-links {
+  height: 90px;
+  overflow-y: auto;
+}
+
+.nav > #nav-check:checked {
+  overflow: hidden;
+}
   .nav > .nav-links > a {
-    display: block;
-    width: 100%;
-  }
+    display: flex; /* Use flexbox to stack items vertically */
+    flex-direction: column; /* Stack items vertically */
+   
+}
+ .nav-bar{
+ 
+  display:flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  height: 390px;
+  
+ }
+ .tooltip {
+  visibility:visible;
+  background-color: rgba(14, 14, 14, 0.7);
+  color: #ffffff;
+  text-align: right;
+  border-radius: 4px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: 70%; /* Position above the icon */
+  left: 90%;
+  transform: translateY(-90%);
+  margin-left:40px;
+  opacity: 0.9;
+
+}
+.nav-links a:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
   .nav > #nav-check:not(:checked) ~ .nav-links {
     height: 0px;
   }
@@ -816,7 +971,12 @@ padding: 20px;
   font-size:12px;
 }
 }
- 
+@media (max-width: 768px) {
+  .nav > .nav-links {
+      display: flex; /* Use flexbox to stack items vertically */
+      flex-direction: column; /* Stack items vertically */
+  }
+}
  
   @media screen and (max-width:700px) {
     
@@ -1075,6 +1235,17 @@ padding: 20px;
 }
 th, td {
   font-size: 14px; /* Reduce text size for smaller screens */
+}
+.nav-bar {
+  display:flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Align items to the left */
+  padding: 0; /* Remove padding */
+}
+
+.nav-bar a {
+  margin: 5px 0; /* Adjust spacing between stacked items */
+
 }
 }
 
