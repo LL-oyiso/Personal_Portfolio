@@ -57,7 +57,34 @@ h3{
   margin:20px 20px;
      /* : 1px solid red;  */
  }
- 
+
+
+
+ /* horizontal nav */
+.nav-flex{
+  display: flex;
+
+}
+.vertical-nav{
+  
+text-align: center;
+font-family:  'Krona One', sans-serif;
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-shadow: 10px 10px 10px white;
+position: fixed;
+}
+.hrz-nav{
+  text-decoration: none;
+  color: var(--highlight, #e6e6e6);
+
+}
+
+.live:hover
+/* horizontal nav */
+
 
  .nav {
   height: 50px;
